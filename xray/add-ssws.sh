@@ -50,7 +50,7 @@ clear
 			echo ""
 			echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 			read -n 1 -s -r -p "Press any key to back on menu"
-v2ray-menu
+m-ssws
 		fi
 	done
 
@@ -316,4 +316,4 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo "" | tee -a /etc/log-create-shadowsocks.log
 read -n 1 -s -r -p "Press any key to back on menu"
 
-menu
+m-ssws
