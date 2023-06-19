@@ -14,7 +14,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#! " "/etc/xray/config.json")
 		echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
         echo ""
         read -n 1 -s -r -p "Press any key to back on menu"
-        menu
+        m-trojan
 	fi
 
 	clear
@@ -28,7 +28,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#! " "/etc/xray/config.json")
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 	read -rp "Input Username : " user
     if [ -z $user ]; then
-    menu
+    m-trojan
     else
     read -p "Expired (days): " masaaktif
     exp=$(grep -wE "^#! $user" "/etc/xray/config.json" | cut -d ' ' -f 3 | sort | uniq)
@@ -51,5 +51,5 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#! " "/etc/xray/config.json")
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo ""
     read -n 1 -s -r -p "Press any key to back on menu"
-    menu
+    m-trojan
     fi
