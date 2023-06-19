@@ -29,7 +29,7 @@ clear
 			echo ""
 			echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 			read -n 1 -s -r -p "Press any key to back on menu"
-v2ray-menu
+m-vmess
 		fi
 	done
 
@@ -122,4 +122,4 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo "" | tee -a /etc/log-create-vmess.log
 read -n 1 -s -r -p "Press any key to back on menu"
 
-menu
+m-vmess
