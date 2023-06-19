@@ -103,7 +103,8 @@ echo -e "\e[1;36m 5 \e[0m: Menu Shadowsocks"
 echo -e "\e[1;36m 6 \e[0m: Menu Setting"
 echo -e "\e[1;36m 7 \e[0m: Status Service"
 echo -e "\e[1;36m 8 \e[0m: Clear RAM Cache"
-echo -e "\e[1;36m x \e[0m: Exit"
+echo -e "\e[1;36m 9 \e[0m: Reboot VPS"
+echo -e "\e[1;36m x \e[0m: Exit Script"
 echo -e   ""
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m Client Name \e[0m: $Name"
@@ -123,6 +124,7 @@ case $opt in
 6) clear ; m-system ;;
 7) clear ; running ;;
 8) clear ; clearcache ;;
+9) clear ; reboot ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu ;;
 esac
