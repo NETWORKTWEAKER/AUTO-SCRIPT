@@ -43,6 +43,7 @@
 - Stunnel4                 : 222, 777<br>
 - Dropbear                 : 109, 143<br>
 - Badvpn                   : 7100-7900<br>
+- Nginx                    : 81<br>
 - Vmess WS TLS             : 443<br>
 - Vless WS TLS             : 443<br>
 - Trojan WS TLS            : 443<br>
