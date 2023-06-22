@@ -40,7 +40,7 @@ dart=$(cat /etc/hosts | grep -w `hostname` | awk '{print $2}')
 if [[ "$hst" != "$dart" ]]; then
 echo "$localip $(hostname)" >> /etc/hosts
 fi
-
+# buat folder
 mkdir -p /etc/xray
 mkdir -p /etc/v2ray
 touch /etc/xray/domain
