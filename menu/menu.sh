@@ -67,6 +67,7 @@ DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 DATE2=$(date -R | cut -d " " -f -5)
 IPVPS=$(curl -s ifconfig.me )
+LOC=$(curl -s ifconfig.co/country )
 cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
@@ -79,7 +80,8 @@ echo -e "\e[1;34m                      VPS INFO                    \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m OS            \e[0m: "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e "\e[1;32m Uptime        \e[0m: $uptime"
-echo -e "\e[1;32m IP            \e[0m: $IPVPS"	
+echo -e "\e[1;32m Public IP     \e[0m: $IPVPS"
+echo -e "\e[1;32m Country       \e[0m: $LOC"
 #echo -e "\e[1;32m ASN           \e[0m: $ISP"
 #echo -e "\e[1;32m CITY          \e[0m: $CITY"
 echo -e "\e[1;32m DOMAIN        \e[0m: $domain"	
