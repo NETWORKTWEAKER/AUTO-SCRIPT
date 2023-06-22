@@ -38,7 +38,7 @@
 ## Service & Port:
 <br>
 - OpenSSH                  : 22<br>
-- SSH Websocket            : 80 [OFF]<br>
+- SSH Websocket            : 80<br>
 - SSH SSL Websocket        : 443<br>
 - Stunnel4                 : 222, 777<br>
 - Dropbear                 : 109, 143<br>
