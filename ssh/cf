@@ -4,7 +4,7 @@ clear
 apt install jq curl -y
 DOMAIN=givpn.online
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=autoscriptxray-${sub}.givpn.online
+SUB_DOMAIN=asx-${sub}.givpn.online
 CF_ID=admin@givpn.online
 CF_KEY=fa8f8ea9172c18e3b2b689ef3e782f3b308d2
 set -euo pipefail
