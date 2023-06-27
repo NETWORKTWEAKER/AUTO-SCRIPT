@@ -13,6 +13,7 @@ clear
 echo -e "\e[1;32m Setup done Please wait.. \e[0m"
 sleep 2
 cd
+rm -rf speedtestfix.sh
 clear
 echo -e "\e[1;32m auto reboot in 5s \e[0m"
 sleep 5
