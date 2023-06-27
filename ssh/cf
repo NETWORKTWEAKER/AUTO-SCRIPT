@@ -1,5 +1,4 @@
 #!/bin/bash
-# cari apa
 clear
 apt install jq curl -y
 DOMAIN=givpn.online
