@@ -257,6 +257,8 @@ rm /root/ins-xray.sh >/dev/null 2>&1
 rm /root/insshws.sh >/dev/null 2>&1
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e ""
-read -n 1 -s -r -p "Press any key to reboot..."
+echo "$BGreen Auto reboot 10 Sec $NC"
+sleep 10
+rm -f setup.sh
 reboot
 
