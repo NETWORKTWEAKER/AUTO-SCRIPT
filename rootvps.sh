@@ -1,6 +1,6 @@
 # by givpn
 # ipinfo
-MYIP=$(wget -qO- ifconfig.co);
+MYIP=$(wget -qO- ifconfig.me);
 # pewarna hidup
 Bred="\e[1;31m"
 BGreen='\e[1;32m'
