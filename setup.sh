@@ -1,5 +1,5 @@
 #!/bin/bash
-# cari apa
+# cari apa  
 clear
 rm -rf setup.sh
 rm -rf /etc/xray/domain
