@@ -76,20 +76,6 @@
 # Service Status
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
 
-# PERHATIAN perlu masuk sebagai root
-- Step 1
-```
-sudo su
-```
-- Step 2
-```
-cd
-```
-- Step 3 INSTALL, NOTE jika sudah root langsung COPAS link dibawah ini saja ya
-```
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
-```
-
 # Buat root di VPS bagi kamu yang login ke server masih menggunakan username yang bukan root
 - Step 1
 ```
@@ -101,8 +87,11 @@ cd
 ```
 - Step 3
 ```
-apt update && apt install wget -y && wget -qO- -O rootvps.sh https://raw.githubusercontent.com/givpn/rootvps/master/rootvps.sh && bash rootvps.sh
-  
+apt update && apt install wget -y && apt upgrade -y && apt dist-upgrade -y && wget -qO- -O rootvps.sh https://raw.githubusercontent.com/givpn/AutoScriptXray/master/rootvps.sh && bash rootvps.sh
+```
+- Step 4 INSTALL, NOTE jika sudah root langsung COPAS link dibawah ini saja ya
+```
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
 
 # Hubungi saya jika ada yang perlu ditanyakan
