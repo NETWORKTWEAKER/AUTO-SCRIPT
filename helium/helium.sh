@@ -659,7 +659,7 @@ function mainMenu() {
  [ 2] Stop Dnsmasq\t   [ 7] Change DNS
  [ 3] Update database\t   [ 8] Update Helium
  [ 4] Activate provider\t   [ 9] Uninstall Helium
- [ 5] Deactivate provider  [10] Exit"
+ [ 5] Deactivate provider  [10] Back To Menu"
 	echo
 	read -p $' Enter option [1-10]: ' MENU_OPTION
 	case ${MENU_OPTION} in
@@ -691,7 +691,7 @@ function mainMenu() {
 		uninstall
 		;;
 	10)
-		exit 0
+		m-system 0
 		;;
 	*)
 		mainMenu
