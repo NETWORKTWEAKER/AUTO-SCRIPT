@@ -5,22 +5,21 @@
 # Auther  : givpn
 # (C) Copyright 2023
 # =========================================
+# pewarna hidup
+BGreen='\e[1;32m'
+NC='\e[0m'
 clear
-if [[ -e /usr/bin/helium ]]; then
-     echo ""
-     echo -e "${green}Ads Block Already Install${NC}"
-     echo ""
-	 read -n1 -r -p "Press any key to continue..."
-	 m-system
-else
 rm -rf /usr/bin/m-system
 wget -q -O /usr/bin/m-system https://raw.githubusercontent.com/givpn/AutoScriptXray/master/helium/menu/m-system.sh
 chmod +x /usr/bin/m-system
 rm -rf /usr/bin/helium
+echo -e "\e[1;32m Start download Panel ADS Block.. \e[0m"
 wget -q -O /usr/bin/helium https://raw.githubusercontent.com/givpn/AutoScriptXray/master/helium/helium.sh
 chmod +x /usr/bin/helium
+echo -e "\e[1;32m Setup done Please wait.. \e[0m"
+sleep 2
 rm -rf /usr/bin/ins-helium
-read -n1 -r -p "Press any key to reboot..."
+echo -e "\e[1;32m auto reboot in 5s \e[0m"
+sleep 5
 reboot
 
-fi
