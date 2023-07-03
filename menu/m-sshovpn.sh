@@ -17,6 +17,7 @@ echo -e " [\e[36m•7\e[0m] Delete User Expired SSH & WS "
 echo -e " [\e[36m•8\e[0m] Set up Autokill SSH "
 echo -e " [\e[36m•9\e[0m] Cek Users Who Do Multi Login Multi"
 echo -e " [\e[36m•10\e[0m] User list created Account "
+echo -e " [\e[36m•11\e[0m] Change Banner SSH "
 echo -e ""
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
 echo -e ""
@@ -37,6 +38,7 @@ case $opt in
 8) clear ; autokill ; exit ;;
 9) clear ; ceklim ; exit ;;
 10) clear ; cat /etc/log-create-ssh.log ; exit ;;
+11) clear ; nano /etc/issue.net ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; m-sshovpn ;;
