@@ -14,7 +14,7 @@
 # VPS masih fresh (WAJIB) / belum pernah install apapun
 <br>
 - DOMAIN (WAJIB) / RANDOM dari Script<br>
-- NOTE domain dari script hanya dilakukan 1x saat proses install untuk mengurangi spam DOMAIN yang sering gonta ganti<br>
+- NOTE domain dari script hanya dilakukan 1x saat proses install untuk mengurangi spam DOMAIN yang sering bergonta-ganti<br>
 - Untuk mengubah Domain di menu setelah install menggunakan domain sendiri bukan dari script lagi OK<br>
 - DEBIAN 9/10<br>
 - Ubuntu 18/20 LTS<br>
@@ -106,10 +106,13 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 <a href="https://www.digitalocean.com/?refcode=8a474003bf18&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
 
 # Human error no comment , i go to sleep
-# PERHATIAN BACA SECARA SEKSAMA
+# PERHATIAN (WAJIB) BACA SECARA SEKSAMA
 - DILARANG DIPERJUAL BELIKAN KARENA SAYA MENDAPATKAN SECARA GRATIS DARI INTERNET
-- GUNAKAN SECARA BIJAK
-- NONTON UNYIL DOSA TANGGUNG SENDIRI YA
+- KEAMANAN DATA / RIWAYAT PENGGUNAAN KAMU DI INTERNET BUKAN TANGGUNG JAWAB SAYA SEBAGAI PENYEDIA SCRIPT
+- SEMUA DATA / RIWAYAT PENGGUNAAN KAMU DI INTERNET HANYA PENYEDIA JARINGAN VPS YANG MENGELOLANYA DAN (FBI) mungkin
+- GUNAKAN SECARA BIJAK MAKA KAMU AKAN TERHINDAR DARI MASALAH
+- NONTON UNYIL DOSA TANGGUNG SENDIRI
+
 # PESAN AKHIR
 - TERIMAKASIH SUDAH MELUANGKAN WAKTU UNTUK MEMBACA DAN MAAF BILA ADA KATA-KATA YANG TIDAK SEMPURNA
 - KARENA SAYA JUGA MANUSIA YANG TIDAK LUPUT DARI KESALAHAN
