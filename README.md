@@ -70,6 +70,7 @@
 - Optional [install Panel ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish/helium/blob/main/helium.sh)
 - DLL
 - auto backup tidak ada ? ya... dihilangkan permanent
+- Terima saja fitur yang ada / kamu bisa tambahkan sendiri secara manual [CARANYA...?](https://github.com/givpn/AutoScriptXray/master/cara)
   
 # Menu
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
