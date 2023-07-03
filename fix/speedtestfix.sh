@@ -18,3 +18,4 @@ clear
 echo -e "\e[1;32m auto reboot in 5s \e[0m"
 sleep 5
 reboot
+
