@@ -11,6 +11,7 @@ BGreen='\e[1;32m'
 NC='\e[0m'
 clear
 rm -rf /usr/bin/m-system
+echo -e "\e[1;32m Update Menu System.. \e[0m"
 wget -q -O /usr/bin/m-system https://raw.githubusercontent.com/givpn/AutoScriptXray/master/helium/menu/m-system.sh
 chmod +x /usr/bin/m-system
 rm -rf /usr/bin/helium
