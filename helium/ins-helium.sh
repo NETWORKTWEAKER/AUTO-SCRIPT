@@ -1,7 +1,7 @@
 #!/bin/bash
 # =========================================
 # Quick Setup | Script Setup Manager
-# Edition : Stable Edition V2.0
+# Edition : Stable Edition 1.0
 # Auther  : givpn
 # (C) Copyright 2023
 # =========================================
