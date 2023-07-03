@@ -11,9 +11,9 @@
 <p align="center"><img src="https://img.shields.io/badge/Service-SSH_Over_Websocket-success.svg">  <img src="https://img.shields.io/badge/Service-SSH_Dropbear-success.svg">  <img src="https://img.shields.io/badge/Service-Stunnel4-success.svg">  <img src="https://img.shields.io/badge/Service-Fail2Ban-brightgreen">  <p align="center"><img src="https://img.shields.io/badge/Service-XRAY-success.svg">  <img src="https://img.shields.io/badge/Service-XRAY_Websocket_TLS-success.svg">  <img src="https://img.shields.io/badge/Service-XRAY_VLESS_VMESS-success.svg">  <img src="https://img.shields.io/badge/Service-XRAY_gRPC_VLESS_VMESS-success.svg">  <img src="https://img.shields.io/badge/Service-XRAY_TROJAN-success.svg">  <img src= "https://img.shields.io/badge/Service-Shadowsocks-success.svg">  <img src="https://wangchujiang.com/sb/status/stable.svg">
   
 # Diperlukan
-# VPS masih fresh (WAJIB)/belum pernah install apapun
+# VPS masih fresh (WAJIB) / belum pernah install apapun
 <br>
-- DOMAIN (WAJIB)/RANDOM dari Script<br>
+- DOMAIN (WAJIB) / RANDOM dari Script<br>
 - NOTE domain dari script hanya dilakukan 1x saat proses install untuk mengurangi spam DOMAIN yang sering gonta ganti<br>
 - Untuk mengubah Domain di menu setelah install menggunakan domain sendiri bukan dari script lagi OK<br>
 - DEBIAN 9/10<br>
@@ -70,7 +70,7 @@
 - Optional [install Panel ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish/helium)
 - DLL
 - auto backup tidak ada ? ya... dihilangkan permanent
-- Terima saja fitur yang ada / kamu bisa tambahkan sendiri secara manual [CARANYA...?](https://github.com/givpn/AutoScriptXray/tree/master/cara)
+- Terima saja fitur yang ada / kamu bisa tambahkan sendiri secara manual [CARANYA](https://github.com/givpn/AutoScriptXray/tree/master/cara)
   
 # Menu
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
