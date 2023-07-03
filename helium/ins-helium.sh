@@ -19,7 +19,8 @@ chmod +x /usr/bin/m-system
 rm -rf /usr/bin/helium
 wget -q -O /usr/bin/helium https://raw.githubusercontent.com/givpn/AutoScriptXray/master/helium/helium.sh
 chmod +x /usr/bin/helium
-rm -rf ins-helium
-helium
+rm -rf /usr/bin/ins-helium
+read -n1 -r -p "Press any key to reboot..."
+reboot
 
 fi
