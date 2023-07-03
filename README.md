@@ -65,9 +65,9 @@
 - Restart All Service
 - AUTO delete user Expired
 - Cek Bandwith
-- BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0/Linux-NetSpeed/blob/master/tcp.sh)
+- BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0/Linux-NetSpeed)
 - DNS CHANGER
-- Optional [install Panel ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish/helium/blob/main/helium.sh)
+- Optional [install Panel ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish/helium)
 - DLL
 - auto backup tidak ada ? ya... dihilangkan permanent
 - Terima saja fitur yang ada / kamu bisa tambahkan sendiri secara manual [CARANYA...?](https://github.com/givpn/AutoScriptXray/tree/master/cara)
