@@ -1,6 +1,6 @@
 # Langsung install Sayangku tanpa perlu daftar IP VPS
 
-# Pesan dariku baca terlebih dahulu sebelum memakai (WAJIB BACA)..!
+# Pesan dariku (WAJIB BACA) terlebih dahulu sebelum memakai
 
 </p> 
 <h2 align="center"> Supported Linux Distribution</h2>
