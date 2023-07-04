@@ -42,3 +42,4 @@ echo "$SUB_DOMAIN" > /etc/v2ray/domain
 echo -e "Done Record Domain= ${SUB_DOMAIN} For VPS"
 sleep 2
 rm -f /root/cf.sh
+
