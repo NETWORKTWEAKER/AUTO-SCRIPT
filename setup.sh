@@ -122,7 +122,7 @@ clear
     echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
     echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
-    read -rp " Pilih domain yang akan kamu pakai : " dns
+    read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
 	if test $dns -eq 1; then
     clear
     apt install jq curl -y
@@ -131,7 +131,7 @@ clear
     bash /root/cf | tee /root/install.log
     print_success "Domain Random Done"
 	elif test $dns -eq 2; then
-    read -rp "Enter Your Domain : " dom
+    read -rp "Enter Your Domain / masukan domain : " dom
     echo "$dom" > /root/scdomain
 	echo "$dom" > /etc/xray/scdomain
 	echo "$dom" > /etc/xray/domain
