@@ -55,7 +55,7 @@ echo -e "UDP Custom  : 1-65350" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\E[0;41;36m         INFO UDP Custom            \E[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "$domen:1-65350@Login:$Pass" | tee -a /etc/log-create-ssh.log
+echo -e "$domen:1-65350@$Login:$Pass" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "Payload WSS" | tee -a /etc/log-create-ssh.log
 echo -e "
@@ -87,7 +87,7 @@ echo -e "UDP Custom  : 1-65350" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\E[0;41;36m         INFO UDP Custom            \E[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "$domen:1-65350@Login:$Pass" | tee -a /etc/log-create-ssh.log
+echo -e "$domen:1-65350@$Login:$Pass" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "Expired On     : $exp" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
