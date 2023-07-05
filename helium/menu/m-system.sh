@@ -14,6 +14,7 @@ echo -e " [\e[36m•5\e[0m] Cek Bandwith"
 echo -e " [\e[36m•6\e[0m] Install TCP BBR"
 echo -e " [\e[36m•7\e[0m] DNS CHANGER"
 echo -e " [\e[36m•8\e[0m] Panel ADS Block "
+echo -e " [\e[36m•9\e[0m] Panel Webmin "
 echo -e ""
 echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
 echo -e   ""
@@ -32,6 +33,7 @@ case $opt in
 6) clear ; m-tcp ; exit ;;
 7) clear ; m-dns ; exit ;;
 8) clear ; helium ; exit ;;
+9) clear ; wbmn ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; m-system ;;
