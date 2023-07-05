@@ -62,12 +62,13 @@
 # Feature
 - Speedtest VPS by [Ookla](https://speedtest.net)
 - Set Auto Reboot
-- Restart All Services
-- AUTO delete expired users
-- Bandwidth Check
-- BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0/Linux-NetSpeed)
+- Restart All Service
+- AUTO delete user Expired
+- Cek Bandwith
+- BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0)
 - DNS CHANGER
-- Optional [install Panel ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish/helium)
+- Optional [install UDP-Custom](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302)
+- Optional [install Helium ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
 - ETC
 - no auto backup? yes... removed permanently
 - Just accept the existing features / you can add them yourself manually [HOW](https://github.com/givpn/AutoScriptXray/tree/master/cara)
