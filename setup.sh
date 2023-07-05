@@ -1,5 +1,7 @@
 #!/bin/bash
-# cari apa  
+# cari apa
+# harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
+# jangan lupa sholat
 clear
 rm -rf setup.sh
 rm -rf /etc/xray/domain
