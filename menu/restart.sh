@@ -51,6 +51,8 @@ case $Restart in
                 systemctl restart xray.service
                 echo -e "[ \033[32mok\033[0m ] Restarting badvpn Service (via systemctl) "
                 sleep 0.5
+                screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500
+                screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500
                 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 500
                 sleep 0.5
                 echo -e "[ \033[32mok\033[0m ] Restarting websocket Service (via systemctl) "
