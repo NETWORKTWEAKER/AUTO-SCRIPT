@@ -1,5 +1,6 @@
 # cari apa ?
 # sedang malas ngode
+# caplok saja
 package main
 
 import (
