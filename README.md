@@ -16,7 +16,7 @@
 # Diperlukan
 # VPS masih fresh (WAJIB) / belum pernah install apapun
 <br>
-- DOMAIN (WAJIB) / RANDOM dari Script Maintenance Tahun depan baru update mungkin , terkendala Dana boss<br>
+- DOMAIN (WAJIB) / RANDOM dari Script Maintenance Tahun depan baru update mungkin , terkendala Dana boss , icipper pakai domain sendiri dulu ya harap bersabar ini ujian dari sang maha kuasa<br>
 - NOTE domain dari script hanya dilakukan 1x saat proses install untuk mengurangi spam DOMAIN yang sering bergonta-ganti<br>
 - Untuk mengubah Domain di menu setelah install menggunakan domain sendiri bukan dari script lagi OK<br>
 - DEBIAN 9/10<br>
