@@ -1,4 +1,5 @@
 # cari apa ?
+# sedang malas ngode
 package main
 
 import (
