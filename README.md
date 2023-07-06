@@ -70,11 +70,11 @@
 - Cek Bandwith
 - BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0)
 - DNS CHANGER
-- Optional [install UDP-Custom](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) by [Exe302](https://gitlab.com/Exe302)
-- Optional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
-- DLL
 - auto backup tidak ada ? ya... dihilangkan permanent
 - Terima saja fitur yang ada / kamu bisa tambahkan sendiri secara manual [CARANYA](https://github.com/givpn/AutoScriptXray/tree/master/cara)
+# Fitur Tambahan Opsional juragan
+- Optional [install UDP-Custom](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) by [Exe302](https://gitlab.com/Exe302)
+- Optional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
   
 # Menu
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
