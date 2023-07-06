@@ -83,7 +83,6 @@
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
 
 # Installasi
-```
 - Step 1
 ```
 apt update && apt upgrade -y && reboot
@@ -113,7 +112,6 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 # PESAN AKHIR
 - TERIMAKASIH SUDAH MELUANGKAN WAKTU UNTUK MEMBACA DAN MAAF BILA ADA KATA-KATA YANG TIDAK SEMPURNA
 - KARENA SAYA JUGA MANUSIA YANG TIDAK LUPUT DARI KESALAHAN
-
 
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"> <img src="https://img.shields.io/badge/License-MIT-blue.svg" style="max-width:200%;">
