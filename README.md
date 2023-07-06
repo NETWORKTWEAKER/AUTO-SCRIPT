@@ -72,7 +72,7 @@
 - DNS CHANGER
 - auto backup tidak ada ? ya... dihilangkan permanent
 - Terima saja fitur yang ada / kamu bisa tambahkan sendiri secara manual [CARANYA](https://github.com/givpn/AutoScriptXray/tree/master/cara)
-# Fitur Tambahan Opsional juragan
+# Fitur Tambahan Opsional juragan (NOTE) install setelah [Step Install] selesai
 - Optional [install UDP-Custom](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) by [Exe302](https://gitlab.com/Exe302)
 - Optional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
   
@@ -82,7 +82,7 @@
 # Service Status
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
 
-# Installasi
+# [Step Install]
 - Step 1
 ```
 apt update && apt upgrade -y && reboot
