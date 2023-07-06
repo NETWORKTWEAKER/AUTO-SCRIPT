@@ -13,14 +13,14 @@
 # Required
 - VPS is still fresh (MUST) / have never installed anything
 <br>
-- DOMAIN (MUST) / RANDOM from Script<br>
+- DOMAIN (MUST) / RANDOM from Script Maintenance Next year, maybe there will be an update, problems with funds, boss, the clipper will use its own domain first, please be patient, this is a test from the almighty<br>
 - NOTE the domain from the script is only done once during the install process to reduce DOMAIN spam which often changes<br>
 - To change the Domain in the menu after install use your own domain instead of the script again OK<br>
 - DEBIAN 9/10<br>
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
 - 1GB RAM<br>
-- Ubuntu 18 recommendation
+- Ubuntu 18 / 20 LTS recommendation
 <br>
 
 # Cloudflare settings for those who have their own Domain, you can check in the folder [image](https://github.com/givpn/AutoScriptXray/tree/master/image) to display other settings
@@ -67,8 +67,8 @@
 - Cek Bandwith
 - BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0)
 - DNS CHANGER
-- Optional [install UDP-Custom](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302)
-- Optional [install Helium ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
+- Optional [install UDP-Custom](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) by [Exe302](https://gitlab.com/Exe302)
+- Optional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
 - ETC
 - no auto backup? yes... removed permanently
 - Just accept the existing features / you can add them yourself manually [HOW](https://github.com/givpn/AutoScriptXray/tree/master/cara)
@@ -79,20 +79,12 @@
 # Service Status
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
 
-# Create root on the VPS for those of you who log into the server still using a username that isn't root
+# Installation
 - Step 1
 ```
-sudo su
+apt update && apt upgrade -y && reboot
 ```
 - Step 2
-```
-cd
-```
-- Step 3
-```
-apt update && apt install wget -y && apt upgrade -y && apt dist-upgrade -y && wget -qO- -O rootvps.sh https://raw.githubusercontent.com/givpn/AutoScriptXray/master/rootvps.sh && bash rootvps.sh
-```
-- Step 4 INSTALL, NOTE If you have root, just copy and paste the link below
 ```
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
