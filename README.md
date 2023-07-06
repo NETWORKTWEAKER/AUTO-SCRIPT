@@ -13,8 +13,7 @@
 <p <p align="center"><img src="https://img.shields.io/badge/Service-Webmin-success.svg"> <img src="https://img.shields.io/badge/Service-Helium-success.svg">
 <p <p align="center"><img src="https://wangchujiang.com/sb/status/stable.svg">
   
-# Diperlukan
-# VPS masih fresh (WAJIB) / belum pernah install apapun
+# Diperlukan VPS masih fresh (WAJIB) / belum pernah install apapun
 <br>
 - DOMAIN (WAJIB) / RANDOM dari Script Maintenance Tahun depan baru update mungkin , terkendala Dana boss , icipper pakai domain sendiri dulu ya harap bersabar ini ujian dari sang maha kuasa<br>
 - NOTE domain dari script hanya dilakukan 1x saat proses install untuk mengurangi spam DOMAIN yang sering bergonta-ganti<br>
@@ -23,7 +22,7 @@
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
 - RAM 1GB<br>
-- Rekomendasi Ubuntu 18 / 20 LTS
+- (Rekomendasi) Ubuntu 18 / 20 LTS
 <br>
 
 # Setting Cloudflare bagi yang punya Domain sendiri, kamu bisa cek di folder [image](https://github.com/givpn/AutoScriptXray/tree/master/image) untuk tampilan setting lainnya
@@ -72,9 +71,9 @@
 - DNS CHANGER
 - auto backup tidak ada ? ya... dihilangkan permanent
 - Terima saja fitur yang ada / kamu bisa tambahkan sendiri secara manual [CARANYA](https://github.com/givpn/AutoScriptXray/tree/master/cara)
-# Fitur Tambahan Opsional juragan (NOTE) install setelah [Step Install] selesai
-- Optional [install UDP-Custom](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) by [Exe302](https://gitlab.com/Exe302)
-- Optional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
+- Fitur Tambahan (Opsional) juragan (NOTE) install setelah [Step Install] selesai
+- Opsional [install UDP-Custom](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) by [Exe302](https://gitlab.com/Exe302)
+- Opsional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
   
 # Menu
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
