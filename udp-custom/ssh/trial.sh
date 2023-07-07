@@ -1,6 +1,8 @@
 #!/bin/bash
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
+sldomain=$(cat /root/nsdomain)
+slkey=$(cat /etc/slowdns/server.pub)
 clear
 cekray=`cat /root/log-install.txt | grep -ow "XRAY" | sort | uniq`
 if [ "$cekray" = "XRAY" ]; then
@@ -24,7 +26,17 @@ ovpn2="$(netstat -nlpu | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | 
 OhpSSH=`cat /root/log-install.txt | grep -w "OHP SSH" | cut -d: -f2 | awk '{print $1}'`
 OhpDB=`cat /root/log-install.txt | grep -w "OHP DBear" | cut -d: -f2 | awk '{print $1}'`
 OhpOVPN=`cat /root/log-install.txt | grep -w "OHP OpenVPN" | cut -d: -f2 | awk '{print $1}'`
-
+pkill sldns-server
+pkill sldns-client
+systemctl daemon-reload
+systemctl stop client-sldns
+systemctl stop server-sldns
+systemctl enable client-sldns
+systemctl enable server-sldns
+systemctl start client-sldns
+systemctl start server-sldns
+systemctl restart client-sldns
+systemctl restart server-sldns
 Login=trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
 hari="1"
 Pass=1
@@ -56,6 +68,9 @@ echo -e "SSH SSL WS : $wsssl"
 echo -e "SSL/TLS    :$ssl"
 echo -e "UDPGW      : 7100-7900"
 echo -e "UDP Custom : 1-65350"
+echo -e "Port NS    : ALL Port (22, 443, 143)"
+echo -e "Nameserver : $sldomain"
+echo -e "Pubkey     : $slkey"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[0;41;36m         INFO UDP Custom            \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -86,6 +101,9 @@ echo -e "SSH SSL WS : $wsssl"
 echo -e "SSL/TLS    :$ssl"
 echo -e "UDPGW      : 7100-7900"
 echo -e "UDP Custom : 1-65350"
+echo -e "Port NS    : ALL Port (22, 443, 143)"
+echo -e "Nameserver : $sldomain"
+echo -e "Pubkey     : $slkey"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "\E[0;41;36m         INFO UDP Custom            \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -101,3 +119,4 @@ fi
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
+
