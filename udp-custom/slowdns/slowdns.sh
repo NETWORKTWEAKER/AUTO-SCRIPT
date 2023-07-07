@@ -26,6 +26,7 @@ NS_DOMAIN=ns-${SUB_DOMAIN}
 echo $NS_DOMAIN > /root/nsdomain
 
 nameserver=$(cat /root/nsdomain)
+domen=$(cat /etc/xray/domain)
 apt update -y
 apt install -y python3 python3-dnslib net-tools
 apt install ncurses-utils -y
@@ -133,3 +134,6 @@ systemctl start server-sldns
 
 systemctl restart client-sldns
 systemctl restart server-sldns
+
+echo "Silahkan Pointing Type NS $NS_DOMAIN Dengan Target $domen"
+sleep 10
