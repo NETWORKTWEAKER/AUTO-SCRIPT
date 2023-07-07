@@ -15,10 +15,14 @@ NC='\e[0m'
 cd
 rm -rf /usr/bin/usernew
 rm -rf /usr/bin/trial
+rm -rf slowdns.sh
 echo "\e[1;32m Update Menu.. \e[0m"
 sleep 1
 wget -q -O /usr/bin/usernew https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/ssh/usernew.sh
 wget -q -O /usr/bin/trial https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/ssh/trial.sh
+echo "\e[1;32m Proses Download Script Slowdns.. \e[0m"
+wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/slowdns/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
+sleep 1
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/trial
 rm -rf /root/udp
@@ -103,6 +107,7 @@ echo ""
 sleep 0,5
 clear
 rm -rf /usr/bin/udp
+rm -rf slowdns.sh
 echo -e "\e[1;32m auto reboot in 5s \e[0m"
 sleep 5
 reboot
