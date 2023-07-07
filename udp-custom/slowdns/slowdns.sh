@@ -137,3 +137,4 @@ systemctl restart server-sldns
 
 echo "Silahkan Pointing Type NS $nameserver Dengan Target $domen"
 sleep 10
+
