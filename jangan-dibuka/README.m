@@ -1,1 +1,0 @@
-# sudah dikasih tau ngeyel
