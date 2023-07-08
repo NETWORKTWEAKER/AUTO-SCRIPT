@@ -21,11 +21,10 @@ echo -e "[1]  AutoKill After 5 Minutes"
 echo -e "[2]  AutoKill After 10 Minutes"
 echo -e "[3]  AutoKill After 15 Minutes"
 echo -e "[4]  Turn Off AutoKill/MultiLogin"
-echo -e "[0]  Back To Menu SSH"
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p "Select From Options [1-4 or x] :  " AutoKill
+read -p "Select From Options [1-4 or x to exit] :  " AutoKill
 if [ -z $AutoKill ]; then
 autokill
 fi
@@ -95,9 +94,9 @@ case $AutoKill in
                 service cron restart >/dev/null 2>&1
                 service cron reload >/dev/null 2>&1
                 ;;
-                0)
+                x)
                 clear
-                m-sshovpn
+                exit
                 ;;
         esac
 read -n 1 -s -r -p "Press any key to back on menu"
