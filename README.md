@@ -82,7 +82,7 @@
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
 
 # [Step Install]
-- Step 1
+- Step 1 khusus (debian)
 ```
 apt update && apt upgrade -y && reboot
 ```
