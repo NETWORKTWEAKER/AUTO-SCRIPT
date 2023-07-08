@@ -1,4 +1,3 @@
-# Baca dan pelajari agar work ya sayang :)
 # install udp-custom + slowdns
 - (NOTE) Slowdns limit speed
 - Upload : 3 Mbps
@@ -6,8 +5,8 @@
 ```
 apt update && apt install wget -y && wget -q -O /usr/bin/udp "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/udp.sh" && chmod +x /usr/bin/udp && udp
 ```
-
-# NS Pointing
+# tidak konek bilang biar tak settingkan juragan
+- NS Pointing
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/slowdns/nspointing.png)
 
 
