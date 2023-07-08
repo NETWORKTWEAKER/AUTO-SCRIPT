@@ -22,7 +22,7 @@
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
 - RAM 1GB<br>
-- (Rekomendasi) Ubuntu 18 / 20 LTS
+- (Rekomendasi) Ubuntu 18 / 20 LTS (lebih STABIL untuk digunakan)
 <br>
 
 # Setting Cloudflare bagi yang punya Domain sendiri, kamu bisa cek di folder [image](https://github.com/givpn/AutoScriptXray/tree/master/image) untuk tampilan setting lainnya
