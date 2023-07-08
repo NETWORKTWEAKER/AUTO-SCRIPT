@@ -2,7 +2,7 @@
 # cari apa
 # harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
 # jangan lupa sholat
-# install 2x auto block
+# install 2x auto bloc
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -117,9 +117,9 @@ clear
     echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
     echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
-    echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
+    #echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
-    read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
+    read -rp " input 1 / pilih 1 : " dns
 	if test $dns -eq 1; then
     clear
     apt install jq curl -y
@@ -127,14 +127,14 @@ clear
     chmod +x /root/cf
     bash /root/cf | tee /root/install.log
     print_success "Domain Random Done"
-	elif test $dns -eq 2; then
-    read -rp "Enter Your Domain / masukan domain : " dom
-    echo "$dom" > /root/scdomain
-	echo "$dom" > /etc/xray/scdomain
-	echo "$dom" > /etc/xray/domain
-	echo "$dom" > /etc/v2ray/domain
-	echo "$dom" > /root/domain
-    echo "IP=$dom" > /var/lib/ipvps.conf
+	#elif test $dns -eq 2; then
+    #read -rp "Enter Your Domain / masukan domain : " dom
+    #echo "$dom" > /root/scdomain
+	#echo "$dom" > /etc/xray/scdomain
+	#echo "$dom" > /etc/xray/domain
+	#echo "$dom" > /etc/v2ray/domain
+	#echo "$dom" > /root/domain
+    #echo "IP=$dom" > /var/lib/ipvps.conf
     else 
     echo "Not Found Argument"
     exit 1
