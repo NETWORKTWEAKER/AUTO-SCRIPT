@@ -5,7 +5,9 @@
 # Kuota Habisss
 # (C) Copyright 2023
 # =========================================
-
+# pewarna hidup
+BGreen='\e[1;32m'
+NC='\e[0m'
 #setting IPtables
 iptables -I INPUT -p udp --dport 5300 -j ACCEPT
 iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5300
@@ -135,6 +137,6 @@ systemctl start server-sldns
 systemctl restart client-sldns
 systemctl restart server-sldns
 
-echo "Silahkan Pointing Type NS $nameserver Dengan Target $domen"
+echo "\e[1;32mSilahkan Pointing Type NS\e[0m: $nameserver \e[1;32mDengan Target\e[0m: $domen"
 sleep 10
 
