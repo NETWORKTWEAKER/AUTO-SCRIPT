@@ -1,6 +1,6 @@
-# Langsung install Sayangku tanpa perlu daftar IP VPS
+# Directly install without the need to register an IP VPS
 
-# Pesan dariku (WAJIB BACA) terlebih dahulu sebelum memakai
+# Order from me (MUST READ) before using
 
 </p> 
 <h2 align="center"> Supported Linux Distribution</h2>
@@ -13,19 +13,19 @@
 <p <p align="center"><img src="https://img.shields.io/badge/Service-Webmin-success.svg"> <img src="https://img.shields.io/badge/Service-Helium-success.svg">
 <p <p align="center"><img src="https://wangchujiang.com/sb/status/stable.svg">
   
-# Diperlukan VPS masih fresh (WAJIB) / belum pernah install apapun
+# Required VPS is still fresh (MUST) / have never installed anything
 <br>
-- DOMAIN (WAJIB) / RANDOM dari Script<br>
-- NOTE domain dari script hanya dilakukan 1x saat proses install untuk mengurangi spam DOMAIN yang sering bergonta-ganti<br>
-- Untuk mengubah Domain di menu setelah install menggunakan domain sendiri bukan dari script lagi OK<br>
+- DOMAIN (MUST) / RANDOM from Script<br>
+- (NOTE) the domain from the script is only done once during the install process to reduce DOMAIN spam which often changes<br>
+- To change the Domain in the after install menu, use your own domain instead of the script again OK<br>
 - DEBIAN 9/10<br>
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
 - RAM 1GB<br>
-- (Rekomendasi) Ubuntu 18 / 20 LTS (lebih STABIL untuk digunakan)
+- (Recommendation) Ubuntu 18 / 20 LTS (STABLE to use)
 <br>
 
-# Setting Cloudflare bagi yang punya Domain sendiri, kamu bisa cek di folder [image](https://github.com/givpn/AutoScriptXray/tree/master/image) untuk tampilan setting lainnya
+# Cloudflare settings for those who have their own Domain, you can check at folder [image](https://github.com/givpn/AutoScriptXray/tree/master/image) to display other settings
 <br>
 - SSL/TLS : FULL<br>
 - SSL/TLS Recommender : OFF<br>
@@ -61,19 +61,19 @@
 - Shadowsocks gRPC         : 443<br>
 <br>
   
-## Fitur
+## Feature
 - Speedtest VPS by [Ookla](https://speedtest.net)
 - Set Auto Reboot
 - Restart All Service
 - AUTO delete user Expired
-- Cek Bandwith
+- Check Bandwith
 - BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0)
 - DNS CHANGER
-- auto backup tidak ada ? ya... dihilangkan permanent
-- Terima saja fitur yang ada / kamu bisa tambahkan sendiri secara manual [CARANYA](https://github.com/givpn/AutoScriptXray/tree/master/cara)
-- Fitur Tambahan (Opsional) juragan (NOTE) install setelah [Step Install] selesai
-- Opsional [install UDP-Custom + Slowdns](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302) + Slowdns by [SL](https://github.com/fisabiliyusri)
-- Opsional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
+- no auto backup? which... is permanently removed
+- Just accept the existing features / you can add them yourself manually [THE METHOD](https://github.com/givpn/AutoScriptXray/tree/master/cara)
+- Additional Features (Optional) skipper (NOTE) install after [Step Install] is complete
+- Optional [install UDP-Custom + Slowdns](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302) + Slowdns by [SL](https://github.com/fisabiliyusri)
+- Optional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
   
 # Menu
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
@@ -82,11 +82,11 @@
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
 
 # [Step Install]
-- Step 1 khusus (debian)
+- Step 1 for (debian) please update first
 ```
 apt update && apt upgrade -y && reboot
 ```
-- Step 2
+- Step 2 for (ubuntu) directly install
 ```
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
@@ -95,22 +95,22 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 [![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/givpn/)
 [![Telegram-grup](https://img.shields.io/badge/Grup-Telegram-blue)](https://t.me/givpn_grup)
 
-# Belikan saya kopi juragan
+# Buy me a coffee skipper
 [![Saweria donate button](https://img.shields.io/badge/Donate-Saweria-red)](https://saweria.co/givpn11)
 [![PayPal donate button](https://img.shields.io/badge/Donate-PayPal-blue)](https://paypal.me/givpn11)
 <a href="https://www.digitalocean.com/?refcode=8a474003bf18&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
 
 # Human error no comment , i go to sleep
-# PERHATIAN (WAJIB) BACA SECARA SEKSAMA
-- DILARANG DIPERJUAL BELIKAN KARENA SAYA MENDAPATKAN SECARA GRATIS DARI INTERNET
-- KEAMANAN DATA / RIWAYAT PENGGUNAAN KAMU DI INTERNET BUKAN TANGGUNG JAWAB SAYA SEBAGAI PENYEDIA SCRIPT
-- SEMUA DATA / RIWAYAT PENGGUNAAN KAMU DI INTERNET HANYA PENYEDIA JARINGAN VPS YANG MENGELOLANYA DAN (FBI) mungkin
-- GUNAKAN SECARA BIJAK MAKA KAMU AKAN TERHINDAR DARI MASALAH
-- NONTON UNYIL DOSA TANGGUNG SENDIRI
+# ATTENTION (MUST READ) CAREFULLY
+- PROHIBITED FOR SALE BECAUSE I GET FREE FROM THE INTERNET
+- DATA SECURITY / YOUR USE HISTORY ON THE INTERNET IS NOT MY RESPONSIBILITY AS A SCRIPT PROVIDER
+- ALL YOUR DATA / USAGE HISTORY ON THE INTERNET ONLY VPS NETWORK PROVIDERS MANAGE IT AND (FBI) maybe
+- USE IT WISELY THEN YOU WILL AVOID PROBLEMS
+- WATCHING ADULT FILM IS YOUR OWN RESPONSIBILITY
 
-# PESAN AKHIR
-- TERIMAKASIH SUDAH MELUANGKAN WAKTU UNTUK MEMBACA DAN MAAF BILA ADA KATA-KATA YANG TIDAK SEMPURNA
-- KARENA SAYA JUGA MANUSIA YANG TIDAK LUPUT DARI KESALAHAN
+# FINAL MESSAGE
+- THANK YOU FOR TAKING THE TIME TO READ AND SORRY IF THERE ARE IMPACT WORDS
+- BECAUSE I AM ALSO A HUMAN WHO DOESN'T ESCAPE FROM MISTAKES
 
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"> <img src="https://img.shields.io/badge/License-MIT-blue.svg" style="max-width:200%;">
