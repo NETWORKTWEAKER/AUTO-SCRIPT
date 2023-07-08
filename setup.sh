@@ -2,13 +2,8 @@
 # cari apa
 # harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
 # jangan lupa sholat
+# install 2x auto block
 clear
-rm -rf setup.sh
-rm -rf /etc/xray/domain
-rm -rf /etc/v2ray/domain
-rm -rf /etc/xray/scdomain
-rm -rf /etc/v2ray/scdomain
-rm -rf /var/lib/ipvps.conf
 red='\e[1;31m'
 green='\e[0;32m'
 yell='\e[1;33m'
