@@ -21,7 +21,7 @@ rm nsdomain
 read -rp "Masukkan domain: " -e domain
 
 read -rp "Masukkan Subdomain Yang Dipakai Host Sekarang: " -e sub
-SUB_DOMAIN=${sub}.${domain}
+SUB_DOMAIN=${sub}
 NS_DOMAIN=ns-${SUB_DOMAIN}
 echo $NS_DOMAIN > /root/nsdomain
 
@@ -49,6 +49,7 @@ service cron restart
 
 #tambahan port openssh
 cd
+echo "Port 22" >> /etc/ssh/sshd_config
 echo "Port 2222" >> /etc/ssh/sshd_config
 echo "Port 2269" >> /etc/ssh/sshd_config
 sed -i 's/#AllowTcpForwarding yes/AllowTcpForwarding yes/g' /etc/ssh/sshd_config
