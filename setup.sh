@@ -2,7 +2,7 @@
 # cari apa
 # harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
 # jangan lupa sholat
-# install 2x auto bloc
+# install 2x auto block
 clear
 red='\e[1;31m'
 green='\e[0;32m'
