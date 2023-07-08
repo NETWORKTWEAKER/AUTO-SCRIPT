@@ -24,7 +24,7 @@ echo -e "[4]  Turn Off AutoKill/MultiLogin"
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p "Select From Options [1-4 or x to exit] :  " AutoKill
+read -p "Select From Options [1-4 or ctrl+c to exit] :  " AutoKill
 if [ -z $AutoKill ]; then
 autokill
 fi
@@ -98,6 +98,5 @@ case $AutoKill in
                 clear
                 exit
                 ;;
-        esac
-read -n 1 -s -r -p "Press any key to back on menu"
-autokill
+                esac
+                
