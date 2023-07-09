@@ -114,10 +114,11 @@ echo "IP=" >> /var/lib/ipvps.conf
 
 echo ""
 clear
-echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
+echo -e "$BBlue                           SETUP SUBDOMAIN VPS     $NC"
+echo -e "$BYellow-------------------------------------------------------------------$NC"
 echo -e "$BYellow Pastikan Subdomain sudah pointing dengan ip vps di cloudflare $NC"
 echo -e "$BYellow Make sure the Subdomain is pointing with the ip vps on cloudflare $NC"
-echo -e "$BYellow----------------------------------------------------------$NC"
+echo -e "$BYellow-------------------------------------------------------------------$NC"
 #echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
 #echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
 #echo -e "$BYellow----------------------------------------------------------$NC"
