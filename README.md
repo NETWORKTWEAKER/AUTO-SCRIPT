@@ -15,9 +15,7 @@
   
 # Required VPS is still fresh (MUST) / have never installed anything
 <br>
-- DOMAIN (MUST) / RANDOM from Script<br>
-- (NOTE) the domain from the script is only done once during the install process to reduce DOMAIN spam which often changes<br>
-- To change the Domain in the after install menu, use your own domain instead of the script again OK<br>
+- DOMAIN (MUST)<br>
 - DEBIAN 9/10<br>
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
