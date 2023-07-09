@@ -33,13 +33,13 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
-echo "IP=$SUB_DOMAIN" > /var/lib/ipvps.conf
-echo "$SUB_DOMAIN" > /root/domain
-echo "$SUB_DOMAIN" > /root/scdomain
-echo "$SUB_DOMAIN" > /etc/xray/scdomain
-echo "$SUB_DOMAIN" > /etc/xray/domain
-echo "$SUB_DOMAIN" > /etc/v2ray/domain
+echo "IP=$SUB_DOMAIN" >> /var/lib/ipvps.conf
+echo $SUB_DOMAIN > /root/domain
+echo "$SUB_DOMAIN" >> /root/scdomain
+echo "$SUB_DOMAIN" >> /etc/xray/scdomain
+echo "$SUB_DOMAIN" >> /etc/xray/domain
+echo "$SUB_DOMAIN" >> /etc/v2ray/domain
 echo -e "Done Record Domain= ${SUB_DOMAIN} For VPS"
 sleep 2
-rm -f /root/cf
+rm -f /root/cf.sh
 
