@@ -106,7 +106,7 @@ echo -e "[ ${BGreen}INFO${NC} ] Aight good ... installation file is ready"
 sleep 0.5
 echo -ne "[ ${BGreen}INFO${NC} ] Check permission : "
 
-echo -e "$BGreen Permission Accepted!$NC"
+echo -e "$BGreen Permission Accepted..$NC"
 sleep 2
 
 mkdir -p /var/lib/ >/dev/null 2>&1
