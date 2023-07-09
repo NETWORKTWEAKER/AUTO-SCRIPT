@@ -1,6 +1,6 @@
 # Directly install without the need to register an IP VPS
 
-# Order from me (MUST READ) before using
+# Order from me (MUST READ) before using 
 
 </p> 
 <h2 align="center"> Supported Linux Distribution</h2>
