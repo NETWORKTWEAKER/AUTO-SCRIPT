@@ -129,13 +129,12 @@ clear
     print_success "Domain Random Done"
     #elif test $dns -eq 2; then
     #read -rp "Enter Your Domain / masukan domain : " dom
-    #echo "IP=$dom" >> /var/lib/ipvps.conf
-    #echo "$dom" > /root/domain
-    #echo "$dom" >> /root/scdomain
-    #echo "IP=$dom" >> /var/lib/ipvps.conf
-    #echo "$dom" >> /etc/xray/scdomain
-    #echo "$dom" >> /etc/xray/domain
-    #echo "$dom" >> /etc/v2ray/domain
+    #echo "IP=$SUB_DOMAIN" >> /var/lib/ipvps.conf
+    #echo $SUB_DOMAIN > /root/domain
+    #echo "$SUB_DOMAIN" > /root/scdomain
+    #echo "$SUB_DOMAIN" >> /etc/xray/scdomain
+    #echo "$SUB_DOMAIN" >> /etc/xray/domain
+    #echo "$SUB_DOMAIN" >> /etc/v2ray/domain
     else 
     echo "Not Found Argument"
     exit 1
