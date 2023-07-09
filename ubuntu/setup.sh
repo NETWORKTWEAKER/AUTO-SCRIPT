@@ -117,30 +117,29 @@ clear
     echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
     echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
-    #echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
+    echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
-    read -rp " input 1 / pilih 1 : " dns
-    if test $dns -eq 1; then
+    read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
+	if test $dns -eq 1; then
     clear
     apt install jq curl -y
     wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
     chmod +x /root/cf
     bash /root/cf | tee /root/install.log
     print_success "Domain Random Done"
-    #elif test $dns -eq 2; then
-    #read -rp "Enter Your Domain / masukan domain : " dom
-    #echo "Host : $dom"
-    #echo "IP=$dom" >> /var/lib/ipvps.conf
-    #echo $dom > /root/domain
-    #echo "$dom" > /root/scdomain
-    #echo "$dom" >> /etc/xray/scdomain
-    #echo "$dom" >> /etc/xray/domain
-    #echo "$dom" >> /etc/v2ray/domain
+	elif test $dns -eq 2; then
+    read -rp "Enter Your Domain / masukan domain : " dom
+    echo "$dom" > /root/scdomain
+	echo "$dom" > /etc/xray/scdomain
+	echo "$dom" > /etc/xray/domain
+	echo "$dom" > /etc/v2ray/domain
+	echo "$dom" > /root/domain
+    echo "IP=$dom" > /var/lib/ipvps.conf
     else 
     echo "Not Found Argument"
     exit 1
     fi
-    echo -e "${BGreen}Done!${NC}"
+	echo -e "${BGreen}Done!${NC}"
     sleep 2
     clear
     
@@ -259,3 +258,5 @@ echo " Auto reboot in 10 Seconds "
 sleep 10
 rm -f setup.sh
 reboot
+
+
