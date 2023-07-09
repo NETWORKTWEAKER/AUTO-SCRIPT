@@ -15,7 +15,7 @@
   
 # Required VPS is still fresh (MUST) / have never installed anything
 <br>
-- DOMAIN (MUST)<br>
+- DOMAIN (MUST) / do not have a domain for pointing my contact on telegram<br>
 - DEBIAN 9/10<br>
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
