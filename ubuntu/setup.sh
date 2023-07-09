@@ -120,26 +120,26 @@ clear
     #echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
     read -rp " input 1 / pilih 1 : " dns
-	if test $dns -eq 1; then
+    if test $dns -eq 1; then
     clear
     apt install jq curl -y
     wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
     chmod +x /root/cf
     bash /root/cf | tee /root/install.log
     print_success "Domain Random Done"
-	#elif test $dns -eq 2; then
+    #elif test $dns -eq 2; then
     #read -rp "Enter Your Domain / masukan domain : " dom
     #echo "$dom" > /root/scdomain
-	#echo "$dom" > /etc/xray/scdomain
-	#echo "$dom" > /etc/xray/domain
-	#echo "$dom" > /etc/v2ray/domain
-	#echo "$dom" > /root/domain
-    #echo "IP=$dom" > /var/lib/ipvps.conf
+    #echo "$dom" > /root/domain
+    #echo "IP=$dom" >> /var/lib/ipvps.conf
+    #echo "$dom" >> /etc/xray/scdomain
+    #echo "$dom" >> /etc/xray/domain
+    #echo "$dom" >> /etc/v2ray/domain
     else 
     echo "Not Found Argument"
     exit 1
     fi
-	echo -e "${BGreen}Done!${NC}"
+    echo -e "${BGreen}Done!${NC}"
     sleep 2
     clear
     
