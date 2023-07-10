@@ -131,15 +131,18 @@ echo -e "$BYellow---------------------------------------------------------------
 #bash /root/cf | tee /root/install.log
 #print_success "Domain Random Done"
 #elif test $dns -eq 2; then
-echo ""
-read -rp "Enter Your Subdomain / Masukan Subdomain : " dom
+read -rp "Enter Your Subdomain / Masukan Subdomain : " -e dom
+if [ -z $dom ]; then
+echo -e "Nothing input for domain.."
+else
 echo "IP=$dom" > /var/lib/ipvps.conf
 echo "$dom" > /root/scdomain
 echo "$dom" > /etc/xray/scdomain
 echo "$dom" > /etc/xray/domain
 echo "$dom" > /etc/v2ray/domain
-echo "$dom" > /root/domain
-echo -e "${BGreen}Add Subdomain Done..${NC}"
+echo $dom > /root/domain
+if
+echo -e "${BGreen}Done..${NC}"
 sleep 2
 clear
     
