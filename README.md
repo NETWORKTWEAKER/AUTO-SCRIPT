@@ -15,7 +15,7 @@
   
 # Required VPS is still fresh (MUST) / have never installed anything
 <br>
-- If you install the Script twice, you need to rebuild the VPS to factory settings, only in the VPS provider panel<br>
+- If you install the Script twice, you need to rebuild the VPS to factory settings, in the VPS provider panel<br>
 - DOMAIN (MUST) / do not have a domain for pointing my contact on telegram<br>
 - DEBIAN 9/10<br>
 - Ubuntu 18/20 LTS<br>
