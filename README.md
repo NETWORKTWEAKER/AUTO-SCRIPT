@@ -99,7 +99,6 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 [![QRIS donate button](https://img.shields.io/badge/Donate-QRIS-red)](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/qris-givpn.jpg)
 <a href="https://www.digitalocean.com/?refcode=8a474003bf18&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
 
-# Human error no comment , i go to sleep
 # ATTENTION (MUST READ) CAREFULLY
 - PROHIBITED FOR SALE BECAUSE I GET FREE FROM THE INTERNET
 - DATA SECURITY / YOUR USE HISTORY ON THE INTERNET IS NOT MY RESPONSIBILITY AS A SCRIPT PROVIDER
@@ -110,6 +109,13 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 # FINAL MESSAGE
 - THANK YOU FOR TAKING THE TIME TO READ AND SORRY IF THERE ARE IMPACT WORDS
 - BECAUSE I AM ALSO A HUMAN WHO DOESN'T ESCAPE FROM MISTAKES
+# And thanks for
+| Name  | Donation Fund  |
+| :------------ | -----:|
+| Goodi         |  $5 |
+| Olly          | $15 |
+| Bakulan.ID    | 25k |
+| arlin         |  5k |
 
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"> <img src="https://img.shields.io/badge/License-MIT-blue.svg" style="max-width:200%;">
