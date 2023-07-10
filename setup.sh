@@ -118,7 +118,7 @@ echo -ne "[ ${yell}WARNING${NC} ] Apakah Anda Ingin Mulai Menginstall? (y/n)? "
 read answer
 if [ "$answer" == "${answer#[Yy]}" ] ;then
 rm setup.sh
-sleep 10
+sleep 1
 exit 0
 else
 clear
