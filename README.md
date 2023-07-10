@@ -63,9 +63,9 @@
 - Speedtest VPS by [Ookla](https://speedtest.net)
 - Set Auto Reboot
 - Restart All Service
-- AUTO delete user Expired
+- AUTO delete user Expired 
 - Check Bandwith
-- BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0)
+- BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0) What is BBR [Search now BBR](https://www.google.com/search?q=what+bbr+in+linux)
 - DNS CHANGER
 - no auto backup? which... is permanently removed
 - Just accept the existing features / you can add them yourself manually
