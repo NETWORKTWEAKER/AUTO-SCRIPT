@@ -117,7 +117,7 @@ echo -e "[ ${green}INFO${NC} ] Script Siap Diinstall"
 echo -ne "[ ${yell}WARNING${NC} ] Apakah Anda Ingin Mulai Menginstall? (y/n)? "
 read answer
 if [ "$answer" == "${answer#[Yy]}" ] ;then
-rm setup.sh
+rm -rf setup.sh
 sleep 1
 exit 0
 else
