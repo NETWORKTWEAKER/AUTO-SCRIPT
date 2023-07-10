@@ -60,7 +60,7 @@
 <br>
   
 ## Feature
-- Speedtest VPS by [Ookla](https://speedtest.net)
+- Speedtest® by [Ookla®](https://speedtest.net) About [Speedtest® by Ookla®](https://www.speedtest.net/about)
 - Set Auto Reboot
 - Restart All Service
 - AUTO delete user Expired 
