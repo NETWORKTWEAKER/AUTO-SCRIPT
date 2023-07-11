@@ -2,6 +2,7 @@
 # cari apa 
 # harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
 # jangan lupa sholat
+rm -rf setup.sh
 rm -rf /var/lib/ipvps.conf
 rm -rf /root/scdomain
 rm -rf /etc/xray/scdomain
