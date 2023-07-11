@@ -1,4 +1,4 @@
-# Directly install without the need to register an IP VPS
+# Directly install without the need to register an IP VPS 
 
 # Order from me (MUST READ) before using
 
