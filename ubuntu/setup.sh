@@ -257,4 +257,3 @@ sleep 10
 rm -f setup.sh
 reboot
 
-
