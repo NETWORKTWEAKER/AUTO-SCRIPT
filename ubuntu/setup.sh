@@ -110,6 +110,18 @@ sleep 2
 
 mkdir -p /var/lib/ >/dev/null 2>&1
 echo "IP=" >> /var/lib/ipvps.conf
+if [ -f "/etc/xray/domain" ]; then
+echo ""
+echo -e "[ ${green}INFO${NC} ] Script Siap Diinstall"
+echo -ne "[ ${yell}WARNING${NC} ] Apakah Anda Ingin Mulai Menginstall? (y/n)? "
+read answer
+if [ "$answer" == "${answer#[Yy]}" ] ;then
+rm -rf setup.sh
+sleep 1
+exit 0
+else
+clear
+fi
 echo ""
 clear
 echo -e "$BBlue                           SETUP SUBDOMAIN VPS     $NC"
@@ -130,7 +142,7 @@ echo -e "$BYellow---------------------------------------------------------------
 #print_success "Domain Random Done"
 #elif test $dns -eq 2; then
 echo ""
-read -rp "Enter Your Subdomain / Masukan Subdomain : " -e dom
+read -rp "Enter Your Subdomain / Masukan Subdomain : " dom
 if [ -z $dom ]; then
 echo -e "Nothing input for domain.."
 else
