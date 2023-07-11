@@ -74,7 +74,7 @@ if [ "" = "$PKG_OK" ]; then
   sleep 0.5
   echo ""
   sleep 0.5
-  echo -e "[ ${BBlue}NOTES${NC} ] apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && reboot"
+  echo -e "[ ${BBlue}NOTES${NC} ] apt update && apt upgrade -y && reboot"
   sleep 0.5
   echo ""
   sleep 0.5
