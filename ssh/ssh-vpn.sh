@@ -310,6 +310,8 @@ wget -O autokill "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/
 wget -O ceklim "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/tendang.sh"
 wget -O sshws "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/sshws.sh"
+wget -O user-lock "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/user-lock.sh"
+wget -O user-unlock "https://raw.githubusercontent.com/Bringas-tunnel/v4/main/ssh/user-unlock.sh"
 
 # menu system
 wget -O m-system "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/m-system.sh"
@@ -345,6 +347,8 @@ chmod +x autokill
 chmod +x ceklim
 chmod +x tendang
 chmod +x sshws
+chmod +x user-lock
+chmod +x user-unlock
 
 chmod +x m-system
 chmod +x m-domain
