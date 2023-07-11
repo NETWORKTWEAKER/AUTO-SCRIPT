@@ -75,10 +75,10 @@
 - Optional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
   
 # Menu
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu1.png)
+![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
 
 # Service Status
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service1.png)
+![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
 
 # [Step Install]
 - Step 1 for (debian) please update first
