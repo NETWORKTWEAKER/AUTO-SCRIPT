@@ -143,7 +143,7 @@ echo "$dom" > /root/scdomain
 echo "$dom" > /etc/xray/scdomain
 echo "$dom" > /etc/xray/domain
 echo "$dom" > /etc/v2ray/domain
-echo $dom > /root/domain
+echo "$dom" > /root/domain
 echo -e "${BGreen}Done..${NC}"
 sleep 2
 clear
