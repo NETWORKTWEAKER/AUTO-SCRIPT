@@ -691,8 +691,8 @@ function mainMenu() {
 	9)
 		uninstall
 		;;
-	10)
-		m-system 0
+	10) exit ; 
+		m-system
 		;;
 	*)
 		mainMenu
