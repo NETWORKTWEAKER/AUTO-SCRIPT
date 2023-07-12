@@ -1,5 +1,5 @@
 #!/bin/bash
-# cari apa 
+# cari apa
 apt dist-upgrade -y
 apt install netfilter-persistent -y
 apt-get remove --purge ufw firewalld -y
