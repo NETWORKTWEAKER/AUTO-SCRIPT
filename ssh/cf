@@ -1,24 +1,16 @@
 #!/bin/bash
-clear
+#==============
+ns_domain_cloudflare1() {
 apt install jq curl -y
-rm -rf /var/lib/ipvps.conf
-rm -rf /root/domain
-rm -rf /root/scdomain
-rm -rf /etc/xray/scdomain
-rm -rf /etc/xray/domain
-rm -rf /etc/v2ray/domain
-mkdir -p /usr/bin/xray
-mkdir -p /usr/bin/v2ray
-mkdir -p /etc/xray
-mkdir -p /etc/v2ray
+clear
+sub=$(</dev/urandom tr -dc a-z-0-9 | head -c4)
 DOMAIN=givpn.online
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 SUB_DOMAIN=asx-${sub}.givpn.online
 CF_ID=givpn11@gmail.com
 CF_KEY=f881f9b79d839f0f2f7601f7a7bd18ab8ddda
 set -euo pipefail
-IP=$(wget -qO- ipv4.icanhazip.com);
-echo "Updating DNS for ${SUB_DOMAIN}..."
+IP=$(wget -qO- ipinfo.io/ip);
+echo "Record DNS ${SUB_DOMAIN}..."
 ZONE=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
      -H "X-Auth-Email: ${CF_ID}" \
      -H "X-Auth-Key: ${CF_KEY}" \
@@ -42,18 +34,14 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "X-Auth-Key: ${CF_KEY}" \
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
-rm -rf /etc/xray/domain
-rm -rf /etc/v2ray/domain
 echo "Host : $SUB_DOMAIN"
-echo "IP=$SUB_DOMAIN" >> /var/lib/ipvps.conf
 echo $SUB_DOMAIN > /root/domain
-echo "$SUB_DOMAIN" > /root/scdomain
-echo "$SUB_DOMAIN" >> /etc/xray/scdomain
-echo "$SUB_DOMAIN" >> /etc/xray/domain
-echo "$SUB_DOMAIN" >> /etc/v2ray/domain
+cp /root/domain /etc/xray/domain
+cp /root/domain /etc/v2ray/domain
+echo "IP=$SUB_DOMAIN" > /var/lib/ipvps.conf
+cp /root/domain /root/scdomain
+cp /root/domain /root/xray/scdomain
 echo -e "Done Record Domain= ${SUB_DOMAIN} For VPS"
-sleep 2
-rm -rf /root/cf
-cd
-
-
+sleep 5
+}
+ns_domain_cloudflare1
