@@ -1,14 +1,7 @@
 #!/bin/bash
-# cari apa 
+# cari apa
 # harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
 # jangan lupa sholat
-rm -rf setup.sh
-rm -rf /var/lib/ipvps.conf
-rm -rf /root/scdomain
-rm -rf /etc/xray/scdomain
-rm -rf /etc/xray/domain
-rm -rf /etc/v2ray/domain
-rm -rf /root/domain
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -25,7 +18,7 @@ yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 # domain random
-#CDN="https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh"
+CDN="https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh"
 cd /root
 #System version number
 if [ "${EUID}" -ne 0 ]; then
@@ -112,41 +105,42 @@ echo -e "[ ${BGreen}INFO${NC} ] Aight good ... installation file is ready"
 sleep 0.5
 echo -ne "[ ${BGreen}INFO${NC} ] Check permission : "
 
-echo -e "$BGreen Permission Accepted..$NC"
+echo -e "$BGreen Permission Accepted!$NC"
 sleep 2
 
 mkdir -p /var/lib/ >/dev/null 2>&1
 echo "IP=" >> /var/lib/ipvps.conf
+
 echo ""
 clear
-echo -e "$BBlue                           SETUP SUBDOMAIN VPS     $NC"
-echo -e "$BYellow-------------------------------------------------------------------$NC"
-echo -e "$BYellow Pastikan Subdomain sudah pointing dengan ip vps di cloudflare $NC"
-echo -e "$BYellow Make sure the Subdomain is pointing with the ip vps on cloudflare $NC"
-echo -e "$BYellow-------------------------------------------------------------------$NC"
-#echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
-#echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
-#echo -e "$BYellow----------------------------------------------------------$NC"
-#read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
-#if test $dns -eq 1; then
-#clear
-#apt install jq curl -y
-#wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
-#chmod +x /root/cf
-#bash /root/cf | tee /root/install.log
-#print_success "Domain Random Done"
-#elif test $dns -eq 2; then
-echo ""
-read -rp "Enter Your Subdomain / Masukan Subdomain : " dom
-echo "IP=$dom" > /var/lib/ipvps.conf
-echo "$dom" > /root/scdomain
-echo "$dom" > /etc/xray/scdomain
-echo "$dom" > /etc/xray/domain
-echo "$dom" > /etc/v2ray/domain
-echo $dom > /root/domain
-echo -e "${BGreen}Done..${NC}"
-sleep 2
-clear
+    echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
+    echo -e "$BYellow----------------------------------------------------------$NC"
+    echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
+    echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
+    echo -e "$BYellow----------------------------------------------------------$NC"
+    read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
+	if test $dns -eq 1; then
+    clear
+    apt install jq curl -y
+    wget -q -O /root/cf "${CDN}/cf" >/dev/null 2>&1
+    chmod +x /root/cf
+    bash /root/cf | tee /root/install.log
+    print_success "Domain Random Done"
+	elif test $dns -eq 2; then
+    read -rp "Enter Your Domain / masukan domain : " dom
+	echo $dom > /root/domain
+    echo "IP=$dom" > /var/lib/ipvps.conf
+	echo "$dom" > /etc/xray/domain
+	echo "$dom" > /etc/v2ray/domain
+    echo "$dom" > /root/scdomain
+	echo "$dom" > /etc/xray/scdomain
+    else 
+    echo "Not Found Argument"
+    exit 1
+    fi
+	echo -e "${BGreen}Done!${NC}"
+    sleep 2
+    clear
     
 #install ssh ovpn
 echo -e "\e[33m-----------------------------------\033[0m"
