@@ -5,7 +5,7 @@ apt install jq curl -y
 clear
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
 DOMAIN=givpn.online
-SUB_DOMAIN=asx-${sub}.givpn.online
+SUB_DOMAIN=asx${sub}.givpn.online
 CF_ID=givpn11@gmail.com
 CF_KEY=f881f9b79d839f0f2f7601f7a7bd18ab8ddda
 set -euo pipefail
@@ -36,11 +36,11 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
 echo "$SUB_DOMAIN" > /root/domain
-cp /root/domain /etc/xray/domain
-cp /root/domain /etc/v2ray/domain
+echo "$SUB_DOMAIN" > /etc/xray/domain
+echo "$SUB_DOMAIN" > /etc/v2ray/domain
+echo "$SUB_DOMAIN" > /root/scdomain
+echo "$SUB_DOMAIN" > /root/xray/scdomain
 echo "IP=$SUB_DOMAIN" > /var/lib/ipvps.conf
-cp /root/domain /root/scdomain
-cp /root/domain /root/xray/scdomain
 echo -e "Done Record Domain= ${SUB_DOMAIN} For VPS"
 sleep 5
 }
