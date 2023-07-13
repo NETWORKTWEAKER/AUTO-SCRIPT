@@ -3,7 +3,7 @@
 ns_domain_cloudflare1() {
 apt install jq curl -y
 clear
-sub=$(</dev/urandom tr -dc a-z-0-9 | head -c4)
+sub=$(</dev/urandom tr -dc a-z9-0 | head -c4)
 DOMAIN=givpn.online
 SUB_DOMAIN=asx-${sub}.givpn.online
 CF_ID=givpn11@gmail.com
