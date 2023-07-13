@@ -116,22 +116,21 @@ clear
 echo -e "\e[33m-----------------------------------\033[0m"
 echo -e "$BGreen      Create Domain Random            $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
-sleep 0.5
-clear
+sleep 2
 wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/cf && chmod +x cf && ./cf
+clear
 #install ssh ovpn
 echo -e "\e[33m-----------------------------------\033[0m"
 echo -e "$BGreen      Install SSH Websocket           $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
-sleep 0.5
-clear
+sleep 2
 wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+clear
 #Instal Xray
 echo -e "\e[33m-----------------------------------\033[0m"
 echo -e "$BGreen          Install XRAY              $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
-sleep 0.5
-clear
+sleep 2
 wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
