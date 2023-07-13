@@ -44,6 +44,7 @@ echo $SUB_DOMAIN > /root/scdomain
 echo $SUB_DOMAIN > /root/xray/scdomain
 echo "IP=$SUB_DOMAIN" > /var/lib/ipvps.conf
 echo -e "Done Record Domain= ${SUB_DOMAIN} For VPS"
+rm -rf cf
 sleep 5
 }
 ns_domain_cloudflare1
