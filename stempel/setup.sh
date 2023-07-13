@@ -58,6 +58,44 @@ echo -e "[ ${BBlue}NOTES${NC} ] I need check your headers first.."
 sleep 0.5
 echo -e "[ ${BGreen}INFO${NC} ] Checking headers"
 sleep 0.5
+totet=`uname -r`
+REQUIRED_PKG="linux-headers-$totet"
+PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok installed")
+echo Checking for $REQUIRED_PKG: $PKG_OK
+if [ "" = "$PKG_OK" ]; then
+  sleep 0.5
+  echo -e "[ ${BRed}WARNING${NC} ] Try to install ...."
+  echo "No $REQUIRED_PKG. Setting up $REQUIRED_PKG."
+  apt-get --yes install $REQUIRED_PKG
+  sleep 0.5
+  echo ""
+  sleep 0.5
+  echo -e "[ ${BBlue}NOTES${NC} ] If error you need.. to do this"
+  sleep 0.5
+  echo ""
+  sleep 0.5
+  echo -e "[ ${BBlue}NOTES${NC} ] apt update && apt upgrade -y && reboot"
+  sleep 0.5
+  echo ""
+  sleep 0.5
+  echo -e "[ ${BBlue}NOTES${NC} ] After this"
+  sleep 0.5
+  echo -e "[ ${BBlue}NOTES${NC} ] Then run this script again"
+  echo -e "[ ${BBlue}NOTES${NC} ] enter now"
+  read
+else
+  echo -e "[ ${BGreen}INFO${NC} ] Oke installed"
+fi
+
+ttet=`uname -r`
+ReqPKG="linux-headers-$ttet"
+if ! dpkg -s $ReqPKG  >/dev/null 2>&1; then
+  rm /root/setup.sh >/dev/null 2>&1 
+  exit
+else
+  clear
+fi
+
 
 secs_to_human() {
     echo "Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 )) minute's $(( ${1} % 60 )) seconds"
