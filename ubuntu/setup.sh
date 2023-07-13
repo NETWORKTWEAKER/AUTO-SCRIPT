@@ -112,7 +112,12 @@ mkdir -p /var/lib/ >/dev/null 2>&1
 echo "IP=" >> /var/lib/ipvps.conf
 echo ""
 clear
-#domain random
+#buat domain random
+echo -e "\e[33m-----------------------------------\033[0m"
+echo -e "$BGreen      Create Domain Random            $NC"
+echo -e "\e[33m-----------------------------------\033[0m"
+sleep 0.5
+clear
 wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/cf && chmod +x cf && ./cf
 #install ssh ovpn
 echo -e "\e[33m-----------------------------------\033[0m"
