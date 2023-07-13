@@ -1,5 +1,5 @@
 #!/bin/bash
-#==============
+#random
 ns_domain_cloudflare1() {
 apt install jq curl -y
 rm -rf /root/xray/scdomain
