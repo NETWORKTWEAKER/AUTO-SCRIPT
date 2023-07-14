@@ -1,6 +1,5 @@
 #!/bin/bash
 #random
-ns_domain_cloudflare1() {
 apt install jq curl -y
 rm -rf /root/xray/scdomain
 mkdir -p /root/xray
@@ -45,6 +44,5 @@ echo "$SUB_DOMAIN" > /root/scdomain
 echo "$SUB_DOMAIN" > /root/xray/scdomain
 echo -e "Done Record Domain= ${SUB_DOMAIN} For VPS"
 rm -rf cf
-sleep 5
-}
-ns_domain_cloudflare1
+sleep 1
+
