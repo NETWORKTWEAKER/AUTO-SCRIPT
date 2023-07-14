@@ -111,29 +111,29 @@ echo "IP=" >> /var/lib/ipvps.conf
 
 echo ""
 clear
-    echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
-    echo -e "$BYellow----------------------------------------------------------$NC"
-    echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
-    echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
-    echo -e "$BYellow----------------------------------------------------------$NC"
-    read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
-	if test $dns -eq 1; then
-	wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/cf && chmod +x cf && ./cf
-	elif test $dns -eq 2; then
-    read -rp "Enter Your Domain / masukan domain : " dom
-    echo "IP=$dom" > /var/lib/ipvps.conf
-    echo "$dom" > /root/scdomain
-	echo "$dom" > /etc/xray/scdomain
-	echo "$dom" > /etc/xray/domain
-	echo "$dom" > /etc/v2ray/domain
-	echo "$dom" > /root/domain
-    else 
-    echo "Not Found Argument"
-    exit 1
-    fi
-	echo -e "${BGreen}Done!${NC}"
-    sleep 2
-    clear
+echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
+echo -e "$BYellow----------------------------------------------------------$NC"
+echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
+echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
+echo -e "$BYellow----------------------------------------------------------$NC"
+read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
+if test $dns -eq 1; then
+wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/cf && chmod +x cf && ./cf
+elif test $dns -eq 2; then
+read -rp "Enter Your Domain / masukan domain : " dom
+echo "IP=$dom" > /var/lib/ipvps.conf
+echo "$dom" > /root/scdomain
+echo "$dom" > /etc/xray/scdomain
+echo "$dom" > /etc/xray/domain
+echo "$dom" > /etc/v2ray/domain
+echo "$dom" > /root/domain
+else 
+echo "Not Found Argument"
+exit 1
+fi
+echo -e "${BGreen}Done!${NC}"
+sleep 2
+clear
     
 #install ssh ovpn
 echo -e "\e[33m-----------------------------------\033[0m"
