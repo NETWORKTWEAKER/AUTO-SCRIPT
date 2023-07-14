@@ -109,15 +109,6 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 # FINAL MESSAGE
 - THANK YOU FOR TAKING THE TIME TO READ AND SORRY IF THERE ARE IMPACT WORDS
 - BECAUSE I AM ALSO A HUMAN WHO DOESN'T ESCAPE FROM MISTAKES
-# And thanks for
-| Name  | Donation Fund  |
-| :------------ | -----:|
-| Goodi         |  $5 |
-| Olly          | $15 |
-| Bakulan.ID    | 25k |
-| arlin         |  5k |
-| VPN-STORE     | 10k |
-| dodo          | 30k |
 
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"> <img src="https://img.shields.io/badge/License-MIT-blue.svg" style="max-width:200%;">
