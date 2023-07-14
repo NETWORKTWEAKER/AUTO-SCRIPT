@@ -118,7 +118,7 @@ clear
     echo -e "$BYellow----------------------------------------------------------$NC"
     read -rp " input 1 or 2 / pilih 1 atau 2 : " dns
 	if test $dns -eq 1; then
- wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/cf && chmod +x cf && ./cf
+	wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/cf && chmod +x cf && ./cf
 	elif test $dns -eq 2; then
     read -rp "Enter Your Domain / masukan domain : " dom
     echo "IP=$dom" > /var/lib/ipvps.conf
