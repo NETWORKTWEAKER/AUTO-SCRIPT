@@ -128,12 +128,12 @@ clear
     print_success "Domain Random Done"
 	elif test $dns -eq 2; then
     read -rp "Enter Your Domain / masukan domain : " dom
+    echo "IP=$dom" > /var/lib/ipvps.conf
     echo "$dom" > /root/scdomain
 	echo "$dom" > /etc/xray/scdomain
 	echo "$dom" > /etc/xray/domain
 	echo "$dom" > /etc/v2ray/domain
 	echo "$dom" > /root/domain
-    echo "IP=$dom" > /var/lib/ipvps.conf
     else 
     echo "Not Found Argument"
     exit 1
