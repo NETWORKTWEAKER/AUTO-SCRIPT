@@ -194,7 +194,7 @@ bw
 
 0)
 sleep 1
-menu
+m-system
 ;;
 x)
 exit
