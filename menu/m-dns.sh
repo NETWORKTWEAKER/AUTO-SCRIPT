@@ -84,7 +84,7 @@ fi
 clear
 dns
 ;;
-3)
+0)
 clear
 m-system
 ;;
