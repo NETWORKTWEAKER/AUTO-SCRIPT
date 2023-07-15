@@ -28,9 +28,10 @@ fi
 echo -e ""
 echo -e " [\e[36m•1\e[0m] CHANGE DNS"
 echo -e " [\e[36m•2\e[0m] Reset DNS To Default"
-echo -e " [\e[36m•3\e[0m] Back To Main Menu"
 echo -e ""
-read -p "Select From Options [ 1 - 3 ] :  " dns
+echo -e "\e[1;34m 0 BACK TO MENU \e[0m"
+echo -e ""
+read -p "Select From Options [ 1 - 2 ] or 0 Back To Menu :  " dns
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 case $dns in
@@ -85,7 +86,7 @@ dns
 ;;
 3)
 clear
-menu
+m-system
 ;;
 *)
 echo "Please enter an correct number"
