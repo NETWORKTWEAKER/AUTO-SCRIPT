@@ -252,7 +252,7 @@ case $Restart in
                 restart
                 ;;                                                                         
                 0)
-                menu
+                m-system
                 exit
                 ;;
                 x)
