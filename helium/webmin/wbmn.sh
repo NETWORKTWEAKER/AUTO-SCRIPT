@@ -66,7 +66,8 @@ echo -e " Status $sts"
 echo -e "  1. Install Webmin"
 echo -e "  2. Restart Webmin"
 echo -e "  3. Uninstall Webmin"
-echo -e "  4. Back Menu"
+echo -e " "
+echo -e "  0. Back Menu"
 echo -e " "
 echo -e " Press CTRL+C to return"
 read -rp " Please Enter The Correct Number : " -e num
@@ -76,7 +77,7 @@ elif [[ "$num" = "2" ]]; then
 restart
 elif [[ "$num" = "3" ]]; then
 uninstall
-elif [[ "$num" = "4" ]]; then
+elif [[ "$num" = "0" ]]; then
 m-system
 else
 clear
