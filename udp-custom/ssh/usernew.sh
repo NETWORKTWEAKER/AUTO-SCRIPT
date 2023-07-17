@@ -77,7 +77,7 @@ echo -e "$domen:1-65350@$Login:$Pass" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\E[0;41;36m          CONFIG OPENVPN            \E[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN TCP : http://$MYIP:81/client-tcp-$ovpn.ovpn" | tee -a /etc/log-create-ssh.log
+echo -e "OpenVPN TCP : http://$MYIP:81/client-tcp-1194.ovpn" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "Payload WSS" | tee -a /etc/log-create-ssh.log
 echo -e "
@@ -118,7 +118,7 @@ echo -e "$domen:1-65350@$Login:$Pass" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\E[0;41;36m          CONFIG OPENVPN            \E[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN TCP : http://$MYIP:81/client-tcp-$ovpn.ovpn" | tee -a /etc/log-create-ssh.log
+echo -e "OpenVPN TCP : http://$MYIP:81/client-tcp-1194.ovpn" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "Payload WSS" | tee -a /etc/log-create-ssh.log
 echo -e "
