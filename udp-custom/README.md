@@ -1,4 +1,4 @@
-# install udp-custom + slowdns
+# install udp-custom + slowdns +OpenVPN
 - (NOTE) Slowdns limit speed
 - Upload : 3 Mbps
 - Download : 3 Mbps
