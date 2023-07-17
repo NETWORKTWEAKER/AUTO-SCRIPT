@@ -61,7 +61,7 @@
 <br>
   
 ## Feature
-- Speedtest® by [Ookla®](https://speedtest.net) About [Speedtest® by Ookla®](https://www.speedtest.net/about)
+- Speedtest® by [Ookla®](https://speedtest.net)
 - Set Auto Reboot
 - Restart All Service
 - AUTO delete user Expired 
