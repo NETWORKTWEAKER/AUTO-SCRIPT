@@ -20,7 +20,7 @@ rm -rf /root/nsdomain
 rm nsdomain
 
 #input nameserver manual to cloudflare
-read -rp "Masukkan domain: " -e domain
+#read -rp "Masukkan domain: " -e domain
 
 read -rp "Masukkan Subdomain Yang Dipakai Host Sekarang: " -e sub
 SUB_DOMAIN=${sub}
