@@ -26,8 +26,10 @@ opensh=`cat /root/log-install.txt | grep -w "OpenSSH" | cut -f2 -d: | awk '{prin
 db=`cat /root/log-install.txt | grep -w "Dropbear" | cut -f2 -d: | awk '{print $1,$2}'`
 ssl="$(cat ~/log-install.txt | grep -w "Stunnel4" | cut -d: -f2)"
 sqd="$(cat ~/log-install.txt | grep -w "Squid Proxy" | cut -d: -f2)"
-ovpn="$(cat ~/log-install.txt | grep -w "OpenVPN" | cut -d: -f2)"
+ovpntcp="$(cat ~/log-install.txt | grep -w "OpenVPN TCP" | cut -d: -f2)"
+ovpnudp="$(cat ~/log-install.txt | grep -w "OpenVPN UDP" | cut -d: -f2)"
 tcp="1194"
+udp="2200"
 OhpSSH=`cat /root/log-install.txt | grep -w "OHP SSH" | cut -d: -f2 | awk '{print $1}'`
 OhpDB=`cat /root/log-install.txt | grep -w "OHP DBear" | cut -d: -f2 | awk '{print $1}'`
 OhpOVPN=`cat /root/log-install.txt | grep -w "OHP OpenVPN" | cut -d: -f2 | awk '{print $1}'`
@@ -69,7 +71,8 @@ echo -e "Port NS     : ALL Port (22, 443, 143)" | tee -a /etc/log-create-ssh.log
 echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-ssh.log
 echo -e "Pubkey      : $slkey" | tee -a /etc/log-create-ssh.log
 echo -e "Squid Proxy :$sqd" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN TCP :$ovpn" | tee -a /etc/log-create-ssh.log
+echo -e "OpenVPN TCP :$ovpntcp" | tee -a /etc/log-create-ssh.log
+echo -e "OpenVPN UDP :$ovpnudp" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\E[0;41;36m         INFO UDP Custom            \E[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
@@ -78,6 +81,8 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[0;41;36m          CONFIG OPENVPN            \E[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "OpenVPN TCP : http://$MYIP:81/client-tcp-$tcp.ovpn" | tee -a /etc/log-create-ssh.log
+echo -e ""
+echo -e "OpenVPN UDP : http://$MYIP:81/client-tcp-$udp.ovpn" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "Payload WSS" | tee -a /etc/log-create-ssh.log
 echo -e "
@@ -110,7 +115,8 @@ echo -e "Port NS     : ALL Port (22, 443, 143)" | tee -a /etc/log-create-ssh.log
 echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-ssh.log
 echo -e "Pubkey      : $slkey" | tee -a /etc/log-create-ssh.log
 echo -e "Squid Proxy :$sqd" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN TCP :$ovpn" | tee -a /etc/log-create-ssh.log
+echo -e "OpenVPN TCP :$ovpntcp" | tee -a /etc/log-create-ssh.log
+echo -e "OpenVPN UDP :$ovpnudp" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\E[0;41;36m         INFO UDP Custom            \E[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
@@ -119,6 +125,8 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 echo -e "\E[0;41;36m          CONFIG OPENVPN            \E[0m" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "OpenVPN TCP : http://$MYIP:81/client-tcp-$tcp.ovpn" | tee -a /etc/log-create-ssh.log
+echo -e ""
+echo -e "OpenVPN UDP : http://$MYIP:81/client-tcp-$udp.ovpn" | tee -a /etc/log-create-ssh.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
 echo -e "Payload WSS" | tee -a /etc/log-create-ssh.log
 echo -e "
