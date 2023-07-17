@@ -6,6 +6,8 @@ echo -e "
 "
 date
 echo ""
+botak=$(cat /etc/xray/domain)
+echo "$botak" > /root/domain
 domain=$(cat /root/domain)
 sleep 0.5
 mkdir -p /etc/xray 
