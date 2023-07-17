@@ -52,92 +52,94 @@ echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 PID=`ps -ef |grep -v grep | grep sshws |awk '{print $2}'`
 
 if [[ ! -z "${PID}" ]]; then
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\E[0;41;36m            SSH Account            \E[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "Username    : $Login" | tee -a /etc/log-create-ssh.log
-echo -e "Password    : $Pass" | tee -a /etc/log-create-ssh.log
-echo -e "Expired On  : $exp" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "IP          : $IP" | tee -a /etc/log-create-ssh.log
-echo -e "Host        : $domen" | tee -a /etc/log-create-ssh.log
-echo -e "OpenSSH     : $opensh" | tee -a /etc/log-create-ssh.log
-echo -e "SSH WS      : $portsshws" | tee -a /etc/log-create-ssh.log
-echo -e "SSH SSL WS  : $wsssl" | tee -a /etc/log-create-ssh.log
-echo -e "SSL/TLS     :$ssl" | tee -a /etc/log-create-ssh.log
-echo -e "UDPGW       : 7100-7900" | tee -a /etc/log-create-ssh.log
-echo -e "UDP Custom  : 1-65350" | tee -a /etc/log-create-ssh.log
-echo -e "Port NS     : ALL Port (22, 443, 143)" | tee -a /etc/log-create-ssh.log
-echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-ssh.log
-echo -e "Pubkey      : $slkey" | tee -a /etc/log-create-ssh.log
-echo -e "Squid Proxy :$sqd" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN TCP :$ovpntcp" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN UDP :$ovpnudp" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\E[0;41;36m         INFO UDP Custom            \E[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "$domen:1-65350@$Login:$Pass" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\E[0;41;36m          CONFIG OPENVPN            \E[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN TCP : http://$MYIP:81/client-tcp-$tcp.ovpn" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN UDP : http://$MYIP:81/client-tcp-$udp.ovpn" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "Payload WSS" | tee -a /etc/log-create-ssh.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[0;41;36m            SSH Account            \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Username    : $Login"
+echo -e "Password    : $Pass"
+echo -e "Expired On  : $exp"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "IP          : $IP"
+echo -e "Host        : $domen"
+echo -e "OpenSSH     : $opensh"
+echo -e "SSH WS      : $portsshws"
+echo -e "SSH SSL WS  : $wsssl"
+echo -e "SSL/TLS     :$ssl"
+echo -e "UDPGW       : 7100-7900"
+echo -e "UDP Custom  : 1-65350"
+echo -e "Port NS     : ALL Port (22, 443, 143)"
+echo -e "Nameserver  : $sldomain"
+echo -e "Pubkey      : $slkey"
+echo -e "Squid Proxy :$sqd"
+echo -e "OpenVPN TCP :$ovpntcp"
+echo -e "OpenVPN UDP :$ovpnudp"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[0;41;36m         INFO UDP Custom            \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$domen:1-65350@$Login:$Pass"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[0;41;36m          CONFIG OPENVPN            \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "OpenVPN TCP : http://$MYIP:81/client-tcp-$tcp.ovpn"
+echo -e ""
+echo -e "OpenVPN UDP : http://$MYIP:81/client-tcp-$udp.ovpn"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Payload WSS"
 echo -e "
 GET wss://isi_bug_disini HTTP/1.1[crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]
-" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "Payload WS" | tee -a /etc/log-create-ssh.log
+"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Payload WS"
 echo -e "
 GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]
-" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
+"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 else
 
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\E[0;41;36m            SSH Account            \E[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "Username    : $Login" | tee -a /etc/log-create-ssh.log
-echo -e "Password    : $Pass" | tee -a /etc/log-create-ssh.log
-echo -e "Expired On  : $exp" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "IP          : $IP" | tee -a /etc/log-create-ssh.log
-echo -e "Host        : $domen" | tee -a /etc/log-create-ssh.log
-echo -e "OpenSSH     : $opensh" | tee -a /etc/log-create-ssh.log
-echo -e "SSH WS      : $portsshws" | tee -a /etc/log-create-ssh.log
-echo -e "SSH SSL WS  : $wsssl" | tee -a /etc/log-create-ssh.log
-echo -e "SSL/TLS     :$ssl" | tee -a /etc/log-create-ssh.log
-echo -e "UDPGW       : 7100-7900" | tee -a /etc/log-create-ssh.log
-echo -e "UDP Custom  : 1-65350" | tee -a /etc/log-create-ssh.log
-echo -e "Port NS     : ALL Port (22, 443, 143)" | tee -a /etc/log-create-ssh.log
-echo -e "Nameserver  : $sldomain" | tee -a /etc/log-create-ssh.log
-echo -e "Pubkey      : $slkey" | tee -a /etc/log-create-ssh.log
-echo -e "Squid Proxy :$sqd" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN TCP :$ovpntcp" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN UDP :$ovpnudp" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\E[0;41;36m         INFO UDP Custom            \E[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "$domen:1-65350@$Login:$Pass" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\E[0;41;36m          CONFIG OPENVPN            \E[0m" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN TCP : http://$MYIP:81/client-tcp-$tcp.ovpn" | tee -a /etc/log-create-ssh.log
-echo -e "OpenVPN UDP : http://$MYIP:81/client-tcp-$udp.ovpn" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "Payload WSS" | tee -a /etc/log-create-ssh.log
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[0;41;36m            SSH Account            \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Username    : $Login"
+echo -e "Password    : $Pass"
+echo -e "Expired On  : $exp"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "IP          : $IP"
+echo -e "Host        : $domen"
+echo -e "OpenSSH     : $opensh"
+echo -e "SSH WS      : $portsshws"
+echo -e "SSH SSL WS  : $wsssl"
+echo -e "SSL/TLS     :$ssl"
+echo -e "UDPGW       : 7100-7900"
+echo -e "UDP Custom  : 1-65350"
+echo -e "Port NS     : ALL Port (22, 443, 143)"
+echo -e "Nameserver  : $sldomain"
+echo -e "Pubkey      : $slkey"
+echo -e "Squid Proxy :$sqd"
+echo -e "OpenVPN TCP :$ovpntcp"
+echo -e "OpenVPN UDP :$ovpnudp"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[0;41;36m         INFO UDP Custom            \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$domen:1-65350@$Login:$Pass"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[0;41;36m          CONFIG OPENVPN            \E[0m"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "OpenVPN TCP : http://$MYIP:81/client-tcp-$tcp.ovpn"
+echo -e ""
+echo -e "OpenVPN UDP : http://$MYIP:81/client-tcp-$udp.ovpn"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Payload WSS"
 echo -e "
 GET wss://isi_bug_disini HTTP/1.1[crlf]Host: ${domen}[crlf]Upgrade: websocket[crlf][crlf]
-" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
-echo -e "Payload WS" | tee -a /etc/log-create-ssh.log
+"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "Payload WS"
 echo -e "
 GET / HTTP/1.1[crlf]Host: $domen[crlf]Upgrade: websocket[crlf][crlf]
-" | tee -a /etc/log-create-ssh.log
-echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-ssh.log
+"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 fi
-echo "" | tee -a /etc/log-create-ssh.log
+echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 m-sshovpn
 
