@@ -1,5 +1,4 @@
 # Cari apa ..? 😆
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/openvpn/malas-ya.png)
 # Telegram
 [![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/givpn/)
 [![Telegram-grup](https://img.shields.io/badge/Grup-Telegram-blue)](https://t.me/givpn_grup)
