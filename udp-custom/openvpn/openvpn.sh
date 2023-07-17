@@ -11,8 +11,7 @@ NC='\e[0m'
 domain=$(cat /etc/xray/domain)
 echo "$domain" > /root/domain
 clear
-MYIP=$(wget -qO- ifconfig.co);
-MYIP2="s/xxxxxxxxx/$MYIP/g";
+ 
 # // install squid for debian 9,10 & ubuntu 20.04
 apt -y install squid3
 
