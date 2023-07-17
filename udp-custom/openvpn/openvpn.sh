@@ -21,7 +21,7 @@ ver=$VERSION_ID
 # // install squid for debian 9,10 & ubuntu 20.04
 apt -y install squid3
 
-# install squid for debian 9,10 & ubuntu 20.04
+# install squid for debian 11
 sleep 1
 echo "\e[1;32m Proses Download squid.. \e[0m"
 apt -y install squid
