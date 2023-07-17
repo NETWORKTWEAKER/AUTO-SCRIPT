@@ -3,7 +3,7 @@
 - Upload : 3 Mbps
 - Download : 3 Mbps
 ```
-apt update && apt install wget -y && wget -q -O /usr/bin/udp "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/udp.sh" && chmod +x /usr/bin/udp && udp
+apt update && apt install wget -y && wget -qO- -O udp.sh "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/udp.sh" && chmod +x udp.sh && ./udp.sh
 ```
 # tidak konek bilang biar tak settingkan juragan
 [![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/givpn/)
