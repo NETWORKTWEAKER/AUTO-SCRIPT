@@ -11,7 +11,13 @@ NC='\e[0m'
 domain=$(cat /etc/xray/domain)
 echo "$domain" > /root/domain
 clear
- 
+# // initializing var
+export DEBIAN_FRONTEND=noninteractive
+MYIP=$(wget -qO- ifconfig.co);
+MYIP2="s/xxxxxxxxx/$MYIP/g";
+NET=$(ip -o $ANU -4 route show to default | awk '{print $5}');
+source /etc/os-release
+ver=$VERSION_ID
 # // install squid for debian 9,10 & ubuntu 20.04
 apt -y install squid3
 
