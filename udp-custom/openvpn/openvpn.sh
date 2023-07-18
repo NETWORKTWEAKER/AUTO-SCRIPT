@@ -14,12 +14,12 @@ clear
 MYIP=$(wget -qO- ifconfig.co);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 # // install squid for debian 9,10 & ubuntu 20.04
-apt -y install squid3
+#apt -y install squid3
 
 # install squid for debian 9,10 & ubuntu 20.04
 sleep 1
 echo "\e[1;32m Proses Download squid.. \e[0m"
-apt -y install squid
+apt -y install squid3
 wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/udp-custom/openvpn/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
