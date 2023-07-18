@@ -46,14 +46,10 @@ setenv FRIENDLY_NAME "OVPN TCP"
 client
 dev tun
 proto tcp
-setenv CLIENT_CERT 0
 remote xxxxxxxxx 1194
 resolv-retry infinite
 route-method exe
 nobind
-remote-cert-tls server
-cipher AES-256-CBC
-auth SHA256
 persist-key
 persist-tun
 auth-user-pass
@@ -68,15 +64,11 @@ cat > /etc/openvpn/client-udp-2200.ovpn <<-END
 setenv FRIENDLY_NAME "OVPN UDP"
 client
 dev tun
-proto udp
-setenv CLIENT_CERT 0
+proto tcp
 remote xxxxxxxxx 2200
 resolv-retry infinite
 route-method exe
 nobind
-remote-cert-tls server
-cipher AES-256-CBC
-auth SHA256
 persist-key
 persist-tun
 auth-user-pass
@@ -92,14 +84,10 @@ setenv FRIENDLY_NAME "OVPN SSL"
 client
 dev tun
 proto tcp
-setenv CLIENT_CERT 0
 remote xxxxxxxxx 442
 resolv-retry infinite
 route-method exe
 nobind
-remote-cert-tls server
-cipher AES-256-CBC
-auth SHA256
 persist-key
 persist-tun
 auth-user-pass
