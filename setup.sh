@@ -1,6 +1,5 @@
 #!/bin/bash
-# cari apa
-# harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
+# cari apa..?? harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
 # jangan lupa sholat
 clear
 red='\e[1;31m'
