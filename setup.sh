@@ -21,10 +21,14 @@ cd /root
 #System version number
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
+  sleep 5
 		exit 1
 fi
 if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		echo "OpenVZ is not supported"
+  clear
+                echo "For VPS with KVM and VMWare virtualization ONLY"
+  sleep 5
 		exit 1
 fi
 
