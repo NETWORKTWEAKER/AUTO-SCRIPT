@@ -1,4 +1,4 @@
-#	$OpenBSD: sshd_config,v 1.101 2017/03/14 07:19:07 djm Exp $
+#	$OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
 
 # This is the sshd server system-wide configuration file.  See
 # sshd_config(5) for more information.
@@ -10,21 +10,12 @@
 # possible, but leave them commented.  Uncommented options override the
 # default value.
 
+Include /etc/ssh/sshd_config.d/*.conf
+
 Port 22
-Port 657
-Port 443
-Port 80
-Port 81
-Port 222
-Port 777
-Port 666
-Port 109
-Port 143
-Port 3369
+Port 2222
 Port 2269
-Port 7100
-Port 7200
-Port 7300
+
 #AddressFamily any
 #ListenAddress 0.0.0.0
 #ListenAddress ::
@@ -107,7 +98,6 @@ X11Forwarding yes
 PrintMotd no
 #PrintLastLog yes
 #TCPKeepAlive yes
-#UseLogin no
 #PermitUserEnvironment no
 #Compression delayed
 #ClientAliveInterval 0
@@ -123,7 +113,7 @@ PrintMotd no
 #Banner none
 
 # Allow client to pass locale environment variables
-AcceptEnv LANG LC_*
+#AcceptEnv LANG LC_*
 
 # override default of no subsystems
 Subsystem	sftp	/usr/lib/openssh/sftp-server
@@ -134,13 +124,5 @@ Subsystem	sftp	/usr/lib/openssh/sftp-server
 #	AllowTcpForwarding no
 #	PermitTTY no
 #	ForceCommand cvs server
-#
-# Google Compute Engine times out connections after 10 minutes of inactivity.
-# Keep alive ssh connections by sending a packet every 2 minutes.
-ClientAliveInterval 420
-ClientAliveInterval 120
-
-#TrustedUserCAKeys /etc/ssh/lightsail_instance_ca.pub
-#
 Banner /etc/issue.net
-AllowTcpForwarding yes
+
