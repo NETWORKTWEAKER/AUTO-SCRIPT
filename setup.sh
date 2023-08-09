@@ -1,6 +1,7 @@
 #!/bin/bash
 # cari apa..?? harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
-# jangan lupa sholat
+# jangan lupa sholat ingat ajal menantimu
+# dibawah ini bukan cd kaset ya
 cd
 rm -rf setup.sh
 clear
