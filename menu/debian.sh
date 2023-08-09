@@ -10,6 +10,7 @@ BGreen='\e[1;32m'
 NC='\e[0m'
 clear
 cd
+rm -rf debian.sh
 rm -rf /usr/bin/clearcache
 rm -rf /usr/bin/menu
 echo "\e[1;32m Update Menu.. \e[0m"
