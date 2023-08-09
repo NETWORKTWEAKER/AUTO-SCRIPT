@@ -1,4 +1,4 @@
-# And thanks for
+# And thanks for your Support
 | Name  | Donation Fund  |
 | :------------ | -----:|
 | Goodi         |  $5 |
