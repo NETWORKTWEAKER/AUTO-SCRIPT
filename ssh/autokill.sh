@@ -13,7 +13,7 @@ sts="${Error}"
 fi
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[44;1;39m             AUTOKILL SSH          \E[0m"
+echo -e "\E[44;1;39m            NT AUTOKILL SSH          \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Status Autokill : $sts        "
 echo -e ""
@@ -88,7 +88,7 @@ case $AutoKill in
                 echo -e ""
                 echo -e "======================================"
                 echo -e ""
-                echo -e "      AutoKill MultiLogin Turned Off  "
+                echo -e "     NT AutoKill MultiLogin Turned Off  "
                 echo -e ""
                 echo -e "======================================"
                 service cron restart >/dev/null 2>&1
@@ -99,4 +99,5 @@ case $AutoKill in
                 exit
                 ;;
                 esac
+
                 
