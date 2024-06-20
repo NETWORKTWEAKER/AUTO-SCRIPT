@@ -1,4 +1,4 @@
-# by givpn
+# by NETWORK TWEAKER 
 # ipinfo
 MYIP=$(wget -qO- ifconfig.me);
 # pewarna hidup
