@@ -24,7 +24,7 @@
 - (Recommendation) Ubuntu 18 / 20 LTS (STABLE to use)
 <br>
 
-# Cloudflare settings for those who have their own Domain, you can check at folder [image](https://github.com/givpn/AutoScriptXray/tree/master/image) to display other settings
+# Cloudflare settings for those who have their own Domain, you can check at folder [image](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/tree/master/image) to display other settings
 <br>
 - SSL/TLS : FULL<br>
 - SSL/TLS Recommender : OFF<br>
@@ -35,7 +35,7 @@
 <br>
 
 # Pointing
-![Pointing](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/pointing.png)
+![Pointing](https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/image/pointing.png)
 
 ## Service & Port:
 <br>
@@ -71,15 +71,15 @@
 - no auto backup? which... is permanently removed
 - Just accept the existing features / you can add them yourself manually
 - Additional Features (Optional) skipper (NOTE) install after [Step Install] is complete
-- Optional [install OpenVPN + Slowdns +](https://github.com/givpn/AutoScriptXray/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302) + Slowdns by [SL](https://github.com/fisabiliyusri)
-- Optional [install Panel Webmin + ADS Block](https://github.com/givpn/AutoScriptXray/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
-- Optional [install Bot Telegram Xolpanel](https://github.com/givpn/AutoScriptXray/tree/master/bot%20telegram%20panel) by [XolvaID](https://github.com/XolvaID)
+- Optional [install OpenVPN + Slowdns +](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/tree/master/udp-custom) UDP-Custom by [Exe302](https://gitlab.com/Exe302) + Slowdns by [SL](https://github.com/fisabiliyusri)
+- Optional [install Panel Webmin + ADS Block](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/tree/master/helium) Helium version 3.0 by [Abi Darwish](https://github.com/abidarwish)
+- Optional [install Bot Telegram Xolpanel](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/tree/master/bot%20telegram%20panel) by [XolvaID](https://github.com/XolvaID)
   
 # Menu
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
+![Service Status](https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/image/menu.png)
 
 # Service Status
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
+![Service Status](https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/image/service.png)
 
 # [Step Install]
 - Step 1 for (debian) please update first
@@ -88,22 +88,12 @@ apt update && apt upgrade -y && reboot
 ```
 - Step 2 for (ubuntu) directly install
 ```
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
 
 # Telegram
-[![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/givpn/)
-[![Telegram-grup](https://img.shields.io/badge/Grup-Telegram-blue)](https://t.me/givpn_grup/)
-
-# Donate
-[![PayPal donate button](https://img.shields.io/badge/Donate-PayPal-yellow)](https://paypal.me/givpn11)
-[![QRIS donate button](https://img.shields.io/badge/Donate-QRIS-red)](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/qris-givpn.jpg)
-[![Bitcoin donate button](https://img.shields.io/badge/Donate-Bitcoin-orange)](https://www.blockchain.com/explorer/addresses/btc/3BE1deCJcuykuTHMzmrmNYgN51E24Hix8i)
-[![Ethereum donate button](https://img.shields.io/badge/Donate-Ethereum-blue)](https://www.blockchain.com/explorer/addresses/eth/0x3eb09df9a72e8e333e202116ff3eb348b3ebf554)
-# List Donate
-[![donate button](https://img.shields.io/badge/List-Donate-green)](https://github.com/givpn/donate)
-
-<!-- <a href="https://www.digitalocean.com/?refcode=8a474003bf18&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a> -->
+[![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/networktweakerop/)
+[![Telegram-grup](https://img.shields.io/badge/Grup-Telegram-blue)](https://t.me/+t1MGUMC6GsZhNWFl/)
 
 # ATTENTION (MUST READ) CAREFULLY
 - PROHIBITED FOR SALE BECAUSE I GET FREE FROM THE INTERNET
@@ -115,10 +105,4 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 # FINAL MESSAGE
 - THANK YOU FOR TAKING THE TIME TO READ AND SORRY IF THERE ARE IMPACT WORDS
 - BECAUSE I AM ALSO A HUMAN WHO DOESN'T ESCAPE FROM MISTAKES
-
-<p align="center">
-<a href="https://opensource.org/licenses/MIT"> <img src="https://img.shields.io/badge/License-MIT-yellow.svg" style="max-width:200%;">
-<p align="center">
-  <a><img src="https://img.shields.io/badge/givpn-AutoScriptXray%202023-blue" style="max-width:200%;">
-
-  
+- 
