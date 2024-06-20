@@ -13,7 +13,7 @@ tls="$(cat ~/log-install.txt | grep -w "Vmess WS TLS" | cut -d: -f2|sed 's/ //g'
 none="$(cat ~/log-install.txt | grep -w "Vmess WS none TLS" | cut -d: -f2|sed 's/ //g')"
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\\E[0;41;36m      Add Vmess Account      \E[0m"
+echo -e "\\E[0;41;36m      Add NT Vmess Account      \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 
 		read -rp "User: " -e user
@@ -22,7 +22,7 @@ echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━�
 		if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
             echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-            echo -e "\\E[0;41;36m      Add Vmess Account      \E[0m"
+            echo -e "\\E[0;41;36m      Add NT Vmess Account      \E[0m"
             echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 			echo ""
 			echo "A client with the specified name was already created, please choose another name."
@@ -96,7 +96,7 @@ systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vmess.log
-echo -e "\\E[0;41;36m        Vmess Account        \E[0m" | tee -a /etc/log-create-vmess.log
+echo -e "\\E[0;41;36m       NT Vmess Account        \E[0m" | tee -a /etc/log-create-vmess.log
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-vmess.log
 echo -e "Remarks        : ${user}" | tee -a /etc/log-create-vmess.log
 echo -e "Domain         : ${domain}" | tee -a /etc/log-create-vmess.log
