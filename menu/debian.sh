@@ -17,8 +17,8 @@ rm -rf /usr/bin/clearcache
 rm -rf /usr/bin/menu
 echo "\e[1;32m NT Update Menu.. \e[0m"
 sleep 1
-wget -q -O /usr/bin/clearcache https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/clearcache.sh
-wget -q -O /usr/bin/menu https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/menu.sh
+wget -q -O /usr/bin/clearcache https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/menu/clearcache.sh
+wget -q -O /usr/bin/menu https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/menu/menu.sh
 sleep 1
 chmod +x /usr/bin/clearcache
 chmod +x /usr/bin/menu
