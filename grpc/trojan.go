@@ -1,1 +1,0 @@
-cari apa ?
