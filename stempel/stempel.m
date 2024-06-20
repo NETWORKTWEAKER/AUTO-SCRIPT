@@ -1,1 +1,1 @@
-stempel saja
+Just stamp it.
