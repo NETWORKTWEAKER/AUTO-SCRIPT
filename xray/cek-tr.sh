@@ -24,7 +24,7 @@ clear
 echo -n > /tmp/other.txt
 data=( `cat /etc/xray/config.json | grep '^#&#' | cut -d ' ' -f 2`);
 echo "-----------------------------------------";
-echo "---------=[ Trojan User Login ]=---------";
+echo "---------=[ NT Trojan User Login ]=---------";
 echo "-----------------------------------------";
 for akun in "${data[@]}"
 do
