@@ -21,7 +21,7 @@ systemctl restart xray > /dev/null 2>&1
 service cron restart > /dev/null 2>&1
 clear
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\\E[0;41;36m        Shadowsocks Account      \E[0m"
+echo -e "\\E[0;41;36m       NT Shadowsocks Account      \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
