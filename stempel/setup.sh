@@ -1,7 +1,7 @@
 #!/bin/bash
-# cari apa 
-# harta tahta hanya sementara ingat masih ada kehidupan setelah kematian
-# jangan lupa sholat
+# What are you looking for? fn ki maa ka bhosda?
+# Wealth and power are only temporary; remember, there is life after death.
+# Don't forget to pray.
 rm -rf setup.sh
 rm -rf /var/lib/ipvps.conf
 rm -rf /root/scdomain
@@ -25,7 +25,7 @@ yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
 # domain random
-#CDN="https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh"
+#CDN="https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/ssh"
 cd /root
 #System version number
 if [ "${EUID}" -ne 0 ]; then
@@ -119,7 +119,7 @@ mkdir -p /var/lib/ >/dev/null 2>&1
 echo "IP=" >> /var/lib/ipvps.conf
 echo ""
 clear
-echo -e "$BBlue                           SETUP SUBDOMAIN VPS     $NC"
+echo -e "$BBlue                          NT SETUP SUBDOMAIN VPS     $NC"
 echo -e "$BYellow-------------------------------------------------------------------$NC"
 echo -e "$BYellow Pastikan Subdomain sudah pointing dengan ip vps di cloudflare $NC"
 echo -e "$BYellow Make sure the Subdomain is pointing with the ip vps on cloudflare $NC"
@@ -150,19 +150,19 @@ clear
     
 #install ssh ovpn
 echo -e "\e[33m-----------------------------------\033[0m"
-echo -e "$BGreen      Install SSH Websocket           $NC"
+echo -e "$BGreen      Install NT SSH Websocket           $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
-wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m-----------------------------------\033[0m"
-echo -e "$BGreen          Install XRAY              $NC"
+echo -e "$BGreen          Install NT XRAY              $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
-wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -201,7 +201,7 @@ if [ ! -f "/etc/log-create-shadowsocks.log" ]; then
 echo "Log Shadowsocks Account " > /etc/log-create-shadowsocks.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/menu/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -249,7 +249,7 @@ echo "   - Trojan gRPC              : 443" | tee -a log-install.txt
 echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
 echo ""
 echo "=============================Contact==============================" | tee -a log-install.txt
-echo "---------------------------t.me/givpn-----------------------------" | tee -a log-install.txt
+echo "---------------------------t.me/networktweakerop-----------------------------" | tee -a log-install.txt
 echo "==================================================================" | tee -a log-install.txt
 echo -e ""
 echo ""
