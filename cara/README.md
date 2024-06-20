@@ -1,1 +1,2 @@
-# Belajarlah..!!!
+# learn from NT..!!!
+
