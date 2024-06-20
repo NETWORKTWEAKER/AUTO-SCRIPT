@@ -22,5 +22,5 @@ case $opt in
 2) clear ; certv2ray ;;
 0) clear ; m-system ;;
 x) exit ;;
-*) echo "Anda salah tekan" ; sleep 1 ; m-domain ;;
+*) echo "EREN YEAGER" ; sleep 1 ; m-domain ;;
 esac
