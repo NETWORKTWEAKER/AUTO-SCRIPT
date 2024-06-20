@@ -1,6 +1,5 @@
 #!/bin/bash
-#script by Abi Darwish
-#recode sikit by givpn
+#script by NETWORK TWEAKER 
 
 VERSIONNAME="Helium v"
 VERSIONNUMBER="3.0"
@@ -16,12 +15,12 @@ publicIP=$(ip -4 addr | sed -ne 's|^.* inet \([^/]*\)/.* scope global.*$|\1|p' |
 
 function header() {
 	echo -e $GREEN" $VERSIONNAME$VERSIONNUMBER" $NOCOLOR
-	echo -e $WHITE" by Abi Darwish" $NOCOLOR
+	echo -e $WHITE" by NETWORK TWEAKER" $NOCOLOR
 }
 
 function isRoot() {
 	if [ ${EUID} != 0 ]; then
-		echo " You need to run this script as root"
+		echo " LOL You need to run this script as root"
 		exit 1
 	fi
 }
@@ -55,7 +54,7 @@ function initialCheck() {
 }
 
 function install() {
-	echo -e " Installing Helium..."
+	echo -e " Installing NT Helium.. "
 	[[ ! -e /etc/dnsmasq ]] && mkdir -p /etc/dnsmasq
 	[[ ! -e /etc/resolv.conf.bak ]] && cp /etc/resolv.conf /etc/resolv.conf.bak
 	if [[ $(lsof -i :53 | grep -w -c "systemd-r") -ge 1 ]]; then
@@ -84,7 +83,7 @@ function install() {
         clear
         header
         echo
-	echo -e " Installation completed"
+	echo -e " Installation completed by NT"
 	sleep 1
 	echo -e " Type \e[1;32mhelium\e[0m to start"
 	echo
@@ -101,7 +100,7 @@ function start() {
 		read -p $' Press Enter to continue...'
 		mainMenu
 	fi
-	echo -e -n " Starting Helium..."
+	echo -e -n " Starting NT Helium..."
 	systemctl enable dnsmasq >/dev/null 2>&1
 	systemctl restart dnsmasq
 	echo "nameserver 127.0.0.1" >/etc/resolv.conf
@@ -145,7 +144,7 @@ function DNSOption() {
 	echo
         heliumStatus
         echo
-	echo -e " ${WHITE}Change DNS${NOCOLOR}"
+	echo -e " ${WHITE}Change NT DNS${NOCOLOR}"
 	echo -e " [1] Google
  [2] Cloudflare
  [3] Cloudflare for Families
@@ -188,7 +187,7 @@ function DNSOption() {
 }
 
 function changeDNS() {
-	echo -e -n " Changing to ${PROVIDER} DNS..."
+	echo -e -n " Changing to ${PROVIDER} NT DNS..."
 	OLD_DNS=$(grep -E -w "^server" /etc/dnsmasq.conf | cut -d '=' -f2)
 	# [[ ${NEW_DNS,,} == "c" ]] && mainMenu
 	# [[ -z ${NEW_DNS} ]] && changeDNS
@@ -276,7 +275,7 @@ function reinstall() {
 	echo
 	read -p " Do you want to reinstall Helium? [y/n]: " REINSTALL
 	[[ ${REINSTALL,,} != "y" ]] && mainMenu
-	echo -e -n " Reinstalling Helium..."
+	echo -e -n " Reinstalling NT Helium..."
 	sleep 2
 	[[ ! -e /etc/dnsmasq ]] && mkdir -p /etc/dnsmasq
 	echo "nameserver 1.1.1.1" >/etc/resolv.conf
@@ -315,7 +314,7 @@ function uninstall() {
 	echo
 	read -p " Do you want to uninstall Helium? [y/n]: " UNINSTALL
 	[[ ${UNINSTALL,,} != "y" ]] && mainMenu
-	echo -e -n " Uninstalling Helium..."
+	echo -e -n " Uninstalling NT Helium..."
 	systemctl stop dnsmasq >/dev/null 2>&1
 	systemctl disable dnsmasq >/dev/null 2>&1
 	apt remove -y dnsmasq >/dev/null 2>&1
@@ -597,7 +596,7 @@ function updateHelium() {
 		mainMenu
 	fi
 	read -p " Do you want to overwrite the existing providers? [y/n]: " OVERWRITE
-	echo -n -e " Updating Helium..."
+	echo -n -e " Updating NT Helium..."
 	if [[ ${OVERWRITE,,} == "y" ]]; then
 		rm -rf /etc/dnsmasq/providers.txt
 		wget -q -O /etc/dnsmasq/providers.txt "https://raw.githubusercontent.com/abidarwish/helium/main/providers.txt"
@@ -659,51 +658,4 @@ function mainMenu() {
 	echo -e " [ 1] Start Dnsmasq\t   [ 6] Whitelist host
  [ 2] Stop Dnsmasq\t   [ 7] Change DNS
  [ 3] Update database\t   [ 8] Update Helium
- [ 4] Activate provider\t   [ 9] Uninstall Helium
- [ 5] Deactivate provider  [10] Back To Menu"
-	echo
-	read -p $' Enter option [1-10]: ' MENU_OPTION
-	case ${MENU_OPTION} in
-	1)
-		start
-		;;
-	2)
-		stop
-		;;
-	3)
-		listUpdate
-		;;
-	4)
-		activateProvider
-		;;
-	5)
-		deactivateProvider
-		;;
-	6)
-		whitelistHost
-		;;
-	7)
-		DNSOption
-		;;
-	8)
-		updateHelium
-		;;
-	9)
-		uninstall
-		;;
-  10) clear ; exit ; m-system ;;
-	*)
-		mainMenu
-		;;
-	esac
-}
-
-initialCheck
-if [[ ! -z $(which dnsmasq) ]] && [[ -e /etc/dnsmasq ]]; then
-	mainMenu
-else
-	clear
-	header
-	echo
-	install
-fi
+ [ 4] Act
