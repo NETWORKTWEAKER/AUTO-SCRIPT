@@ -18,7 +18,7 @@ echo -e BOT_TOKEN='"'$bottoken'"' >> /root/xolpanel/var.txt
 echo -e ADMIN='"'$admin'"' >> /root/xolpanel/var.txt
 echo -e DOMAIN='"'$domain'"' >> /root/xolpanel/var.txt
 clear
-echo "Done"
+echo "Done Script By NETWORK TWEAKER"
 echo "Your Data Bot"
 echo -e "==============================="
 echo "Bot Token     : $bottoken"
