@@ -1,2 +1,2 @@
 # What are you looking for? 
-# haters ki na ka bhosda 
+# haters ki maa ka bhosda 
