@@ -1,8 +1,8 @@
 # =========================================
 # Quick Setup | Script Setup Manager
 # Edition : Stable Edition 1.0
-# Auther  : givpn
-# Kuota Habisss
+# Auther  : NETWORK TWEAKER 
+# CYBER NOVA & EREN YEAGER 
 # (C) Copyright 2023
 # =========================================
 # pewarna hidup
