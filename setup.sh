@@ -3,7 +3,6 @@
 # Don't forget to pray; remember, death awaits you.
 # What's below is not a CD or cassette.
 cd
-bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/NT-A.I.O/main/Pythoninstall)
 rm -rf setup.sh
 clear
 red='\e[1;31m'
