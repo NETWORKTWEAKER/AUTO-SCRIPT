@@ -12,7 +12,7 @@ function error_exit {
 
 # Constants and variables
 DOMAIN="vipssh.online"
-SUB_DOMAIN="asx-$(head /dev/urandom | tr -dc a-z0-9 | head -c 5).vipssh.online"
+SUB_DOMAIN="NT-$(head /dev/urandom | tr -dc a-z0-9 | head -c 5).vipssh.online"
 CF_ID="omkarpvtnet@gmail.com"
 CF_KEY="G--q0m2zhfvIBeTPtRIY6E3wXZWLdxZcUSmCQ12M"  # Update with your API token
 IP=$(curl -s ipinfo.io/ip)
