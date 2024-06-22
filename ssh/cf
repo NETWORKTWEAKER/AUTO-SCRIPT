@@ -1,40 +1,65 @@
 #!/bin/bash
-#random
-apt install jq curl -y
-rm -rf /root/xray/scdomain
-mkdir -p /root/xray
-clear
-sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-DOMAIN=vipssh.online
-SUB_DOMAIN=asx-${sub}.vipssh.online
-CF_ID=omkarpvtnet@gmail.com
-CF_KEY=bwsghSMwELrNEjWqRi5FofEHGYbG5VHv2UTjI2-Q
-set -euo pipefail
-IP=$(wget -qO- ipinfo.io/ip);
-echo "Record DNS ${SUB_DOMAIN}..."
-ZONE=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
-     -H "X-Auth-Email: ${CF_ID}" \
-     -H "X-Auth-Key: ${CF_KEY}" \
-     -H "Content-Type: application/json" | jq -r .result[0].id)
 
-RECORD=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records?name=${SUB_DOMAIN}" \
-     -H "X-Auth-Email: ${CF_ID}" \
-     -H "X-Auth-Key: ${CF_KEY}" \
+# Install necessary packages if not already installed
+apt update
+apt install -y jq curl
+
+# Function to print error messages and exit
+function error_exit {
+    echo "Error: $1" >&2
+    exit 1
+}
+
+# Constants and variables
+DOMAIN="vipssh.online"
+SUB_DOMAIN="asx-$(head /dev/urandom | tr -dc a-z0-9 | head -c 5).vipssh.online"
+CF_ID="omkarpvtnet@gmail.com"
+CF_KEY="G--q0m2zhfvIBeTPtRIY6E3wXZWLdxZcUSmCQ12M"  # Update with your API token
+IP=$(curl -s ipinfo.io/ip)
+API_URL="https://api.cloudflare.com/client/v4"
+ZONE_ID="22f179ea2814da885e6a44de3d2f4488"  # Update with your zone ID
+
+# Function to update DNS record in Cloudflare
+function update_dns_record {
+    local zone_id="$1"
+    local record_id="$2"
+    local response=$(curl -sX PUT "${API_URL}/zones/${zone_id}/dns_records/${record_id}" \
+                    -H "Authorization: Bearer ${CF_KEY}" \
+                    -H "Content-Type: application/json" \
+                    --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":null,"proxied":false}') || error_exit "Failed to execute API request: PUT ${API_URL}/zones/${zone_id}/dns_records/${record_id}"
+    echo "$response"
+}
+
+# Main script execution
+set -euo pipefail
+
+echo "Record DNS $SUB_DOMAIN..."
+
+# Check if DNS record exists
+RECORD=$(curl -sX GET "${API_URL}/zones/${ZONE_ID}/dns_records?name=${SUB_DOMAIN}" \
+     -H "Authorization: Bearer ${CF_KEY}" \
      -H "Content-Type: application/json" | jq -r .result[0].id)
 
 if [[ "${#RECORD}" -le 10 ]]; then
-     RECORD=$(curl -sLX POST "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records" \
-     -H "X-Auth-Email: ${CF_ID}" \
-     -H "X-Auth-Key: ${CF_KEY}" \
-     -H "Content-Type: application/json" \
-     --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}' | jq -r .result.id)
+    # Create DNS record if it doesn't exist
+    RECORD=$(curl -sX POST "${API_URL}/zones/${ZONE_ID}/dns_records" \
+    -H "Authorization: Bearer ${CF_KEY}" \
+    -H "Content-Type: application/json" \
+    --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","proxied":false}' | jq -r .result.id) || error_exit "Failed to create DNS record in Cloudflare."
 fi
 
-RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records/${RECORD}" \
-     -H "X-Auth-Email: ${CF_ID}" \
-     -H "X-Auth-Key: ${CF_KEY}" \
-     -H "Content-Type: application/json" \
-     --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
+# Update DNS record with current IP and auto TTL
+update_dns_record "$ZONE_ID" "$RECORD"
+
+# Output confirmation
+echo "Host: $SUB_DOMAIN"
+echo "Done Record Domain: $SUB_DOMAIN for VPS"
+
+# Update configuration files (ensure directories exist)
+mkdir -p /root/xray/
+echo "$SUB_DOMAIN" > /root/xray/scdomain
+
+echo "Script execution completed."
 echo "Host : $SUB_DOMAIN"
 echo "IP=$SUB_DOMAIN" > /var/lib/ipvps.conf
 echo "$SUB_DOMAIN" > /root/domain
