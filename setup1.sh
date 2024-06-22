@@ -85,13 +85,13 @@ mkdir -p /var/lib/
 echo "IP=" >> /var/lib/ipvps.conf
 
 # Installation summary
-echo "====================================================================================================="
+echo "===================================="
 echo " _   _ _______     ______  _   _ "
 echo "| \ | |_   _\ \   / /  _ \| \ | |"
 echo "|  \| | | |  \ \ / /| |_) |  \| |"
 echo "| |\  | | |   \ V / |  __/| |\  |"
 echo "|_| \_| |_|    \_/  |_|   |_| \_|"
-echo "==========================================================================================================="        
+echo "===================================="        
 echo "Services and Ports:"
 echo " - OpenSSH: 22"
 echo " - SSH Websocket: 80"
@@ -118,8 +118,8 @@ echo "=================================================================="
 
 # Cleanup and reboot
 rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf ssh-vpn.sh ins-xray.sh insshws.sh
-echo "Auto reboot in 10 seconds..."
-sleep 10
+echo "Auto reboot in 40 seconds..."
+sleep 40
 
 # Additional commands
 bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/Auto/main/dnsdisable.sh)
