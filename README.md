@@ -37,7 +37,7 @@
 <br>
 
 # Pointing
-![Pointing](https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/image/pointing.png)
+![Pointing](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/blob/master/image/pointing.png)
 
 ## Service & Port:
 <br>
@@ -78,10 +78,10 @@
 - Optional [install Bot Telegram Xolpanel](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/tree/master/bot%20telegram%20panel) by [XolvaID](https://github.com/XolvaID)
   
 # Menu
-![Service Status](https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/image/menu.png)
+![Service Status](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/blob/master/image/menu.png)
 
 # Service Status
-![Service Status](https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/image/service.png)
+![Service Status](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/master/image/service.png)
 
 # [Step Install]
 - Step 1 for (debian) please update first
