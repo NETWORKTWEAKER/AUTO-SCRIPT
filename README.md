@@ -78,10 +78,10 @@
 - Optional [install Bot Telegram Xolpanel](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/tree/master/bot%20telegram%20panel) by [XolvaID](https://github.com/XolvaID)
   
 # Menu
-![Service Status](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/blob/master/image/menu.png)
+![Service Status](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/blob/master/image/menu1.png)
 
 # Service Status
-![Service Status](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/blob/master/image/service.png)
+![Service Status](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/blob/master/image/service1.png)
 
 # [Step Install]
 - Step 1 for (debian) please update first
