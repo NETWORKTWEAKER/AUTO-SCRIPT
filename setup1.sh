@@ -41,7 +41,7 @@ if ! python --version 2>&1 | grep -q "Python 2.7"; then
 fi
 
 # Domain configuration
-echo "1. Use Domain Random"
+echo "1. Use Our NT Domain Random"
 echo "2. Choose Your Own Domain"
 read -rp "Input 1 or 2: " dns
 if [ "$dns" -eq 1 ]; then
