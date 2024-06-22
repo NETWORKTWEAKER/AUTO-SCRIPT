@@ -116,16 +116,16 @@ echo "=================================================================="
 echo "Contact: t.me/networktweakerop"
 echo "=================================================================="
 
-# Cleanup and reboot
-rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf ssh-vpn.sh ins-xray.sh insshws.sh
-echo "Auto reboot in 40 seconds..."
-sleep 40
-
 # Additional commands
 bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/Auto/main/dnsdisable.sh)
 wget -O /root/log-install.txt https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/log-install.txt
 bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/NT-A.I.O/main/dropbearconfig.sh)
 bash <(curl -Ls https://github.com/lalfulsk/NT-A.I.O/raw/main/dropbear.sh)
+
+# Cleanup and reboot
+rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf ssh-vpn.sh ins-xray.sh insshws.sh
+echo "Auto reboot in 40 seconds..."
+sleep 40
 
 # Reboot
 reboot
