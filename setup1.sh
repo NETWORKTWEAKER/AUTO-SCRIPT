@@ -20,7 +20,7 @@ touch /etc/xray/domain /etc/v2ray/domain /etc/xray/scdomain /etc/v2ray/scdomain
 
 # Update and install required packages
 apt-get update
-apt-get install -y software-properties-common build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev git
+apt-get install -y software-properties-common build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev git dos2unix
 
 # Download and install Python 2.7 from source
 cd /usr/src
@@ -45,7 +45,10 @@ echo "1. Use Domain Random"
 echo "2. Choose Your Own Domain"
 read -rp "Input 1 or 2: " dns
 if [ "$dns" -eq 1 ]; then
-    wget -qO- https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/ssh/cf | bash
+    # Download cf script and convert line endings
+    wget https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/ssh/cf
+    dos2unix cf
+    bash cf
 elif [ "$dns" -eq 2 ]; then
     read -rp "Enter Your Domain: " dom
     echo "$dom" > /var/lib/ipvps.conf
@@ -110,7 +113,7 @@ echo "Contact: t.me/networktweakerop"
 echo "=================================================================="
 
 # Cleanup and reboot
-rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh
+rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf
 echo "Auto reboot in 10 seconds..."
 sleep 10
 
