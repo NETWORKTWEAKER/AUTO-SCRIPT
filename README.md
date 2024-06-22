@@ -81,7 +81,7 @@
 ![Service Status](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/blob/master/image/menu.png)
 
 # Service Status
-![Service Status](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/master/image/service.png)
+![Service Status](https://github.com/NETWORKTWEAKER/AUTO-SCRIPT/blob/master/image/service.png)
 
 # [Step Install]
 - Step 1 for (debian) please update first
