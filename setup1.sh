@@ -63,9 +63,17 @@ else
 fi
 
 # Install services
-wget -qO- https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/ssh/ssh-vpn.sh | bash
-wget -qO- https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/xray/ins-xray.sh | bash
-wget -qO- https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/sshws/insshws.sh | bash
+wget -q https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/ssh/ssh-vpn.sh
+dos2unix ssh-vpn.sh
+bash ssh-vpn.sh
+
+wget -q https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/xray/ins-xray.sh
+dos2unix ins-xray.sh
+bash ins-xray.sh
+
+wget -q https://raw.githubusercontent.com/NETWORKTWEAKER/AUTO-SCRIPT/master/sshws/insshws.sh
+dos2unix insshws.sh
+bash insshws.sh
 
 # Setup environment for auto-reboot
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
@@ -113,7 +121,7 @@ echo "Contact: t.me/networktweakerop"
 echo "=================================================================="
 
 # Cleanup and reboot
-rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf
+rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf ssh-vpn.sh ins-xray.sh insshws.sh
 echo "Auto reboot in 10 seconds..."
 sleep 10
 
