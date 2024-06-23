@@ -122,7 +122,8 @@ wget -O /root/log-install.txt https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main
 bash <(curl -Ls https://raw.githubusercontent.com/lalfulsk/NT-A.I.O/main/dropbearconfig.sh)
 bash <(curl -Ls https://github.com/lalfulsk/NT-A.I.O/raw/main/dropbear.sh)
 bash <(curl -Ls https://github.com/NETWORKTWEAKER/SCRIPTS/raw/main/swap.sh)
-
+sudo systemctl start dropbear
+sudo systemctl enable dropbear
 # Cleanup and reboot
 rm -f /root/setup.sh /root/ins-xray.sh /root/insshws.sh cf ssh-vpn.sh ins-xray.sh insshws.sh
 echo "Auto reboot in 40 seconds..."
